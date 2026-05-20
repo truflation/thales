@@ -1,0 +1,48 @@
+[project]
+name = "thales"
+version = "0.1.0"
+description = "Truflation foundational econometric model stack — nowcast, forecast, regime, transmission."
+readme = "README.md"
+authors = [
+    { name = "kluless13", email = "angd1399@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "duckdb>=1.5.2",
+    "fredapi>=0.5.2",
+    "jax<0.5",
+    "jaxlib<0.5",
+    "lxml>=6.1.0",
+    "numpy>=2.4.4",
+    "numpyro<0.20",
+    "pandas>=3.0.2",
+    "polars>=1.40.1",
+    "properscoring>=0.1",
+    "pyarrow>=24.0.0",
+    "requests>=2.33.1",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "statsmodels>=0.14",
+    "torch>=2.11.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "ruff>=0.15.11",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (Monte Carlo / density calibration / bootstrap-heavy). Default runs skip these; use `pytest -m slow` to include.",
+]
+# Default: skip slow tests for the dev-loop CI check. Run full suite with:
+#   pytest -m 'slow or not slow'
+# Or nightly only the slow ones:
+#   pytest -m slow
+addopts = "-m 'not slow'"

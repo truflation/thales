@@ -1,0 +1,14 @@
+{
+  "pce": {
+    "target": "pce",
+    "actual": null,
+    "individuals": {
+      "pce_standalone": 3.764276745501308,
+      "pce_native_cbdf": 3.7820230567949364,
+      "truf_weighted_pce_cbdf": 3.781052218162584
+    },
+    "mean": 3.7757840068196096,
+    "median": 3.781052218162584,
+    "trimmed_mean": 3.781052218162584
+  }
+}

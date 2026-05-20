@@ -1,0 +1,252 @@
+start_date,end_date,category_id,subcategory_id,source_id,relative_importance,bls_relative_importance,pce_relative_importance,table,PCE category,PCE core,BLS category,categories4,categories1,categories2,categories3,Goods or Services,Core or NonCore
+2026-01-01,,78,0,0,15.229,13.698,12.360,,,,,,,,,,
+2026-01-01,,78,90,0,10.435,8.325,7.150,,,,,,,,,,
+2026-01-01,,90,92,0,1.351,1.035,0.975,,,,,,,,,,
+2026-01-01,,90,92,496,0.135,0.104,0.098,com_numbeo_us_cereals,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,92,173,0.676,0.517,0.487,com_nielseniq_us_cereals,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,92,168,0.270,0.206,0.194,gov_bls_cereals,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,92,178,0.135,0.104,0.098,com_truflation_yahoo_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,92,909,0.135,0.104,0.098,com_moojing_us_food_and_non_alcoholic_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,0,2.270,1.995,1.339,,,,,,,,,,
+2026-01-01,,90,93,513,0.023,0.020,0.013,com_trading_economics_us_eggs,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,497,0.227,0.200,0.134,com_numbeo_us_meats,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,178,0.227,0.200,0.134,com_truflation_yahoo_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,169,0.454,0.398,0.268,gov_bls_meats,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,174,1.135,0.997,0.669,com_nielseniq_us_meats,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,93,909,0.204,0.180,0.121,com_moojing_us_food_and_non_alcoholic_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,94,0,1.001,0.758,0.492,,,,,,,,,,
+2026-01-01,,90,94,499,0.100,0.076,0.049,com_numbeo_us_dairy,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,94,178,0.100,0.076,0.049,com_truflation_yahoo_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,94,170,0.200,0.152,0.098,gov_bls_dairy,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,94,175,0.501,0.378,0.247,com_nielseniq_us_dairy_products,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,94,909,0.100,0.076,0.049,com_moojing_us_food_and_non_alcoholic_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,95,0,2.063,1.269,0.837,,,,,,,,,,
+2026-01-01,,90,95,498,0.206,0.127,0.084,com_numbeo_us_fruits,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,95,178,0.206,0.127,0.084,com_truflation_yahoo_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,95,171,0.413,0.254,0.167,gov_bls_fruits,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,95,176,1.032,0.634,0.418,com_nielseniq_us_fruits_and_vegetables,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,95,909,0.206,0.127,0.084,com_moojing_us_food_and_non_alcoholic_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,0,3.750,3.268,3.507,,,,,,,,,,
+2026-01-01,,90,96,500,0.375,0.327,0.351,com_numbeo_us_other_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,254,0.604,0.526,0.565,com_nielseniq_us_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,480,1.271,1.108,1.188,com_nielseniq_us_other_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,253,0.244,0.212,0.228,gov_bls_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,172,0.506,0.441,0.473,gov_bls_other_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,178,0.375,0.327,0.351,com_truflation_yahoo_food,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,90,96,909,0.375,0.327,0.351,com_moojing_us_food_and_non_alcoholic_beverages,221,,2,Food,All Items,,,Goods,NonCore
+2026-01-01,,78,91,0,4.794,5.373,5.210,,,,,,,,,,
+2026-01-01,,78,91,495,0.480,0.537,0.521,com_numbeo_us_food_away_from_home,315,PCE core,2,Food,All Items,,,Services,NonCore
+2026-01-01,,78,91,184,1.438,1.612,1.563,com_economist_bigmac_usa_usd,315,PCE core,2,Food,All Items,,,Services,NonCore
+2026-01-01,,78,91,178,1.438,1.612,1.563,com_truflation_yahoo_food,315,PCE core,2,Food,All Items,,,Services,NonCore
+2026-01-01,,78,91,183,1.438,1.612,1.563,gov_bls_food_away_from_home,315,PCE core,2,Food,All Items,,,Services,NonCore
+2026-01-01,,79,0,0,23.142,35.625,16.240,,,,,,,,,,
+2026-01-01,,79,97,0,13.722,26.496,11.427,,,,,,,,,,
+2026-01-01,,97,100,0,5.439,10.503,4.525,,,,,,,,,,
+2026-01-01,,97,100,529,4.079,7.877,3.401,com_truflation_total_monthly_repayment,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,100,336,1.360,2.626,1.124,gov_bls_over_equivalent_rent,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,101,0,4.320,8.342,3.600,,,,,,,,,,
+2026-01-01,,97,101,479,2.160,4.171,1.800,edu_psu_housing_full_series,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,101,336,2.160,4.171,1.800,gov_bls_over_equivalent_rent,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,102,0,3.963,7.651,3.302,,,,,,,,,,
+2026-01-01,,97,102,479,1.783,3.443,1.486,edu_psu_housing_full_series,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,102,336,1.783,3.443,1.486,gov_bls_over_equivalent_rent,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,97,102,525,0.397,0.765,0.330,com_insurify_home_insurance,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,98,0,8.094,7.840,3.620,,,,,,,,,,
+2026-01-01,,79,98,501,1.618,1.568,0.716,com_numbeo_us_rented_dwellings,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,98,334,1.619,1.568,0.726,com_apartmentlist_us_rent,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,98,332,1.619,1.568,0.726,com_redfin_us_rented_dwellings,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,98,186,1.619,1.568,0.726,com_zillow_us_rented_dwellings,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,98,479,1.619,1.568,0.726,edu_psu_housing_full_series,311,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,99,0,1.326,1.289,1.193,,,,,,,,,,
+2026-01-01,,79,99,478,0.597,0.580,0.477,com_trivago_hotel,315,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,99,467,0.132,0.129,0.239,com_truflation_us_hotel_price,315,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,79,99,187,0.597,0.580,0.477,gov_bls_other_lodging,315,PCE core,421,Housing services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,80,0,0,19.761,16.316,9.500,,,,,,,,,,
+2026-01-01,,80,103,0,9.099,6.672,3.417,,,,,,,,,,
+2026-01-01,,103,107,0,4.202,3.882,1.927,,,,,,,,,,
+2026-01-01,,103,107,502,0.420,0.388,0.195,com_numbeo_us_new_vehicles,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,107,188,1.891,1.747,0.866,com_kbb_us_cars_and_trucks,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,107,189,1.891,1.747,0.866,gov_bls_cars_and_trucks,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,108,0,4.746,2.790,1.032,,,,,,,,,,
+2026-01-01,,103,108,191,1.582,0.930,0.341,com_mainheim_us_used_cars_and_trucks,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,108,190,1.582,0.930,0.350,com_cargurus_cars_and_trucks,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,108,914,1.582,0.930,0.341,com_truflation_jdpower_fisher_index,211,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,103,109,0,0.151,,0.458,,,,,,,,,,
+2026-01-01,,103,109,193,0.151,,0.458,gov_bls_other_vehicles,213,PCE core,413,Transportation Commodities less motor fuel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,80,104,0,3.154,2.981,1.849,,,,,,,,,,
+2026-01-01,,80,104,194,1.007,0.953,0.594,com_aaa_us_gasoline,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,104,196,0.033,0.031,0.019,com_aaa_us_other_fuels,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,104,510,1.007,0.952,0.594,com_gasbuddy_us_gasoline,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,104,446,0.067,0.062,0.039,com_numbeo_us_gasoline_3m_avg,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,104,197,0.033,0.031,0.019,gov_bls_other_fuels,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,104,195,1.007,0.952,0.584,gov_eia_gasoline,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,80,105,0,6.979,5.178,2.823,,,,,,,,,,
+2026-01-01,,105,110,0,0.519,0.394,0.146,,,,,,,,,,
+2026-01-01,,105,110,198,0.519,0.394,0.146,gov_bls_vehicle_finance_charges,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,111,0,1.767,1.388,1.801,,,,,,,,,,
+2026-01-01,,105,111,462,0.176,0.138,0.584,com_nielseniq_us_maintenance,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,111,199,1.591,1.250,1.217,gov_bls_maintenance_and_repairs,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,112,0,1.525,0.643,0.360,,,,,,,,,,
+2026-01-01,,105,112,200,0.228,0.096,0.058,gov_bls_vehicle_rental_3252,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,112,201,1.297,0.547,0.302,gov_bls_vehicle_rental_3255,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,113,0,3.168,2.753,0.516,,,,,,,,,,
+2026-01-01,,105,113,202,1.584,1.377,0.253,gov_bls_vehicle_insurance,316,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,105,113,509,1.584,1.377,0.263,com_insurify_car_insurance,316,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,80,106,0,0.529,1.485,1.411,,,,,,,,,,
+2026-01-01,,80,106,503,0.265,0.743,0.710,com_numbeo_us_public_transport,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,80,106,203,0.264,0.743,0.701,gov_bls_public_and_other_transportation,313,PCE core,425,Transportation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,81,0,0,5.961,4.546,2.550,,,,,,,,,,
+2026-01-01,,81,114,0,0.909,0.773,0.502,,,,,,,,,,
+2026-01-01,,81,114,454,0.091,0.077,0.061,com_numbeo_us_basic_utilities_3m_avg,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,114,205,0.364,0.309,0.184,gov_bls_natural_gas,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,114,204,0.454,0.387,0.257,gov_eia_natural_gas,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,115,0,3.325,2.489,1.229,,,,,,,,,,
+2026-01-01,,81,115,454,0.333,0.249,0.123,com_numbeo_us_basic_utilities_3m_avg,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,115,207,1.330,0.996,0.492,gov_bls_electricity,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,115,206,1.662,1.244,0.614,gov_eia_electricity,311,,3,Energy,All Items,,,Services,NonCore
+2026-01-01,,81,116,0,0.230,0.140,0.133,,,,,,,,,,
+2026-01-01,,81,116,454,0.023,0.014,0.010,com_numbeo_us_basic_utilities_3m_avg,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,81,116,208,0.207,0.126,0.123,gov_bls_fuel_oil,223,,3,Energy,All Items,,,Goods,NonCore
+2026-01-01,,81,117,0,1.497,1.144,0.686,,,,,,,,,,
+2026-01-01,,81,117,454,0.150,0.114,0.072,com_numbeo_us_basic_utilities_3m_avg,311,PCE core,422,Water & Trash collection,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,81,117,209,1.347,1.030,0.614,gov_bls_water,311,PCE core,422,Water & Trash collection,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,82,0,0,8.795,8.423,21.250,,,,,,,,,,
+2026-01-01,,82,118,0,6.228,0.890,1.334,,,,,,,,,,
+2026-01-01,,82,118,210,1.868,0.267,0.400,gov_bls_medical_care,312,PCE core,424,Medical Care Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,82,118,527,4.360,0.623,0.934,com_kff_health_insurance,312,PCE core,424,Medical Care Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,82,119,0,1.468,6.044,16.523,,,,,,,,,,
+2026-01-01,,82,119,210,1.468,6.044,16.523,gov_bls_medical_care,312,PCE core,424,Medical Care Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,82,120,0,0.809,1.354,3.352,,,,,,,,,,
+2026-01-01,,82,120,211,0.622,1.041,2.578,gov_bls_drugs,224,PCE core,414,Medical Care Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,82,120,530,0.187,0.313,0.774,com_nielseniq_us_pain_relief,224,PCE core,414,Medical Care Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,82,121,0,0.290,0.135,0.041,,,,,,,,,,
+2026-01-01,,82,121,212,0.170,0.079,0.025,gov_bls_medical_supplies,224,PCE core,414,Medical Care Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,82,121,532,0.060,0.028,0.008,com_nielseniq_us_first_aid_kit,224,PCE core,414,Medical Care Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,82,121,531,0.060,0.028,0.008,com_nielseniq_us_medical_accessory,224,PCE core,414,Medical Care Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,83,0,0,7.051,5.221,8.850,,,,,,,,,,
+2026-01-01,,83,122,0,2.223,1.803,4.549,,,,,,,,,,
+2026-01-01,,122,125,0,0.527,0.922,0.556,,,,,,,,,,
+2026-01-01,,122,125,213,0.527,0.922,0.556,gov_bls_personal_services,317,PCE core,428,Other Personal Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,122,126,0,1.696,0.881,3.993,,,,,,,,,,
+2026-01-01,,122,126,214,0.853,0.443,1.877,gov_bls_other_household_expenses_3232,317,PCE core,423,Household Operations,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,122,126,215,0.280,0.145,0.864,gov_bls_other_household_expenses_3233,317,PCE core,423,Household Operations,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,122,126,216,0.563,0.293,1.252,gov_bls_other_household_expenses_3234,317,PCE core,423,Household Operations,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,83,123,0,1.268,0.847,0.596,,,,,,,,,,
+2026-01-01,,123,127,0,0.258,0.265,0.199,,,,,,,,,,
+2026-01-01,,123,127,460,0.129,0.132,0.099,com_nielseniq_us_laundry,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,127,217,0.103,0.106,0.080,gov_bls_laundry,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,127,910,0.026,0.027,0.020,com_moojing_us_household_durables_and_daily_use_item,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,128,0,0.813,0.287,0.099,,,,,,,,,,
+2026-01-01,,123,128,459,0.407,0.143,0.049,com_nielseniq_us_other_household_products,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,128,217,0.325,0.115,0.040,gov_bls_laundry,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,128,910,0.081,0.029,0.010,com_moojing_us_household_durables_and_daily_use_item,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,129,0,0.197,0.295,0.298,,,,,,,,,,
+2026-01-01,,123,129,218,0.177,0.265,0.268,gov_bls_postage_and_stationery,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,123,129,910,0.020,0.030,0.030,com_moojing_us_household_durables_and_daily_use_item,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,83,124,0,3.560,2.571,3.705,,,,,,,,,,
+2026-01-01,,124,130,0,0.176,0.169,0.467,,,,,,,,,,
+2026-01-01,,124,130,245,0.046,0.044,0.121,gov_bls_household_textiles_31112,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,130,246,0.112,0.108,0.299,gov_bls_household_textiles_31113,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,130,910,0.018,0.017,0.047,com_moojing_us_household_durables_and_daily_use_item,224,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,131,0,0.810,0.884,0.785,,,,,,,,,,
+2026-01-01,,124,131,247,0.729,0.796,0.706,gov_bls_furniture,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,131,910,0.081,0.088,0.079,com_moojing_us_household_durables_and_daily_use_item,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,132,0,0.045,0.070,0.139,,,,,,,,,,
+2026-01-01,,124,132,248,0.040,0.063,0.125,gov_bls_floor_coverings,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,132,910,0.005,0.007,0.014,com_moojing_us_household_durables_and_daily_use_item,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,133,0,0.537,0.065,0.368,,,,,,,,,,
+2026-01-01,,124,133,456,0.268,0.032,0.184,com_nielseniq_us_major_appliances,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,133,249,0.215,0.026,0.147,gov_bls_major_appliances,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,133,910,0.054,0.007,0.037,com_moojing_us_household_durables_and_daily_use_item,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,134,0,0.204,0.126,0.060,,,,,,,,,,
+2026-01-01,,124,134,458,0.102,0.063,0.030,com_nielseniq_us_small_appliances,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,134,250,0.082,0.050,0.024,gov_bls_small_appliances,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,134,910,0.020,0.013,0.006,com_moojing_us_household_durables_and_daily_use_item,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,135,0,1.788,1.257,1.886,,,,,,,,,,
+2026-01-01,,124,135,252,0.429,0.302,0.451,gov_bls_misc_household_equipment_3114,212,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,135,251,1.180,0.829,1.227,gov_bls_misc_household_equipment_3115,213,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,124,135,910,0.179,0.126,0.208,com_moojing_us_household_durables_and_daily_use_item,213,PCE core,411,Household Furnishing and supplies,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,0,0,1.831,1.287,2.350,,,,,,,,,,
+2026-01-01,,84,136,0,1.129,0.840,1.860,,,,,,,,,,
+2026-01-01,,84,136,504,0.282,0.210,0.774,com_numbeo_us_alcohol,221,,417,Alcoholic Beverages,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,136,220,0.565,0.420,0.724,com_nielseniq_us_alcoholic_beverages,221,,417,Alcoholic Beverages,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,136,219,0.282,0.210,0.362,gov_bls_alcoholic_beverages,221,,417,Alcoholic Beverages,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,137,0,0.702,0.447,0.490,,,,,,,,,,
+2026-01-01,,84,137,222,0.351,0.223,0.245,com_nielseniq_us_tobacco_products_and_smoking_supplies,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,137,400,0.070,0.045,0.045,com_numbeo_us_cigarettes_3m_avg,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,84,137,221,0.281,0.179,0.200,gov_bls_tobacco_products,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,0,0,3.764,2.368,3.020,,,,,,,,,,
+2026-01-01,,85,138,0,0.856,0.624,0.688,,,,,,,,,,
+2026-01-01,,138,143,0,0.630,0.502,0.548,,,,,,,,,,
+2026-01-01,,138,143,406,0.126,0.100,0.110,com_numbeo_us_jeans_6m_avg,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,138,143,223,0.441,0.352,0.383,gov_bls_men_16_over,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,138,143,912,0.063,0.050,0.055,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,138,144,0,0.226,0.122,0.140,,,,,,,,,,
+2026-01-01,,138,144,224,0.203,0.110,0.126,gov_bls_boys_2_to_15,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,138,144,912,0.023,0.012,0.014,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,139,0,1.431,0.923,1.136,,,,,,,,,,
+2026-01-01,,139,145,0,1.197,0.821,1.016,,,,,,,,,,
+2026-01-01,,139,145,225,1.017,0.697,0.864,gov_bls_women_16_over,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,139,145,406,0.030,0.021,0.025,com_numbeo_us_jeans_6m_avg,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,139,145,409,0.030,0.021,0.025,com_numbeo_us_summer_dress_6m_avg,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,139,145,912,0.120,0.082,0.102,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,139,146,0,0.234,0.102,0.120,,,,,,,,,,
+2026-01-01,,139,146,226,0.211,0.092,0.108,gov_bls_girls_2_to_15,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,139,146,912,0.023,0.010,0.012,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,140,0,0.178,0.097,0.130,,,,,,,,,,
+2026-01-01,,85,140,227,0.160,0.087,0.117,gov_bls_children_under_2,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,140,912,0.018,0.010,0.013,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,141,0,0.824,0.552,0.568,,,,,,,,,,
+2026-01-01,,85,141,507,0.124,0.083,0.085,com_numbeo_us_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,141,228,0.618,0.414,0.426,gov_bls_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,141,912,0.082,0.055,0.057,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,142,0,0.475,0.172,0.498,,,,,,,,,,
+2026-01-01,,85,142,229,0.427,0.155,0.448,gov_bls_other_apparel,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,85,142,912,0.048,0.017,0.050,com_moojing_us_clothing_and_footwear,222,PCE core,412,Apparel,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,86,0,0,3.272,3.244,1.450,,,,,,,,,,
+2026-01-01,,86,147,0,0.427,1.308,0.686,,,,,,,,,,
+2026-01-01,,86,147,410,0.214,0.654,0.343,com_numbeo_us_internet_3m_avg,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,86,147,230,0.213,0.654,0.343,gov_bls_residential_phone,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,86,148,0,2.845,1.936,0.764,,,,,,,,,,
+2026-01-01,,86,148,231,2.845,1.936,0.764,gov_bls_celluar_phone,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,87,0,0,2.321,2.602,2.280,,,,,,,,,,
+2026-01-01,,87,149,0,0.191,0.033,0.609,,,,,,,,,,
+2026-01-01,,87,149,232,0.191,0.033,0.609,gov_bls_reading,214,PCE core,416,Education & Communication Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,87,150,0,2.130,2.569,1.671,,,,,,,,,,
+2026-01-01,,87,150,505,0.426,0.514,0.334,com_numbeo_us_education,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,87,150,233,0.652,0.786,0.511,gov_bls_education_3271,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,87,150,234,0.200,0.242,0.157,gov_bls_education_3274,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,87,150,526,0.852,1.027,0.669,com_nces_tuition_fees,317,PCE core,427,Education & Communication Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,0,0,5.515,5.137,6.840,,,,,,,,,,
+2026-01-01,,88,151,0,0.805,1.992,2.986,,,,,,,,,,
+2026-01-01,,88,151,506,0.081,0.199,0.300,com_numbeo_us_fees_and_admissions,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,151,235,0.724,1.793,2.686,gov_bls_fees_and_admissions,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,152,0,1.986,1.029,1.268,,,,,,,,,,
+2026-01-01,,88,152,237,0.265,0.137,0.009,gov_bls_audio_visual_3151,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,152,236,0.380,0.197,0.436,gov_bls_audio_visual_3162,213,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,152,238,1.242,0.644,0.760,gov_bls_audio_visual_3261,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,152,911,0.099,0.051,0.063,com_moojing_us_recreation_and_culture,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,153,0,1.628,1.483,1.168,,,,,,,,,,
+2026-01-01,,153,155,0,1.306,1.128,0.539,,,,,,,,,,
+2026-01-01,,153,155,465,0.392,0.338,0.162,com_nielseniq_us_pets,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,153,155,239,0.447,0.387,0.184,gov_bls_pets_3152,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,153,155,240,0.402,0.347,0.166,gov_bls_pets_3262,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,153,155,911,0.065,0.056,0.027,com_moojing_us_recreation_and_culture,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,153,156,0,0.322,0.355,0.629,,,,,,,,,,
+2026-01-01,,153,156,241,0.306,0.337,0.598,gov_bls_toys,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,153,156,911,0.016,0.018,0.031,com_moojing_us_recreation_and_culture,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,154,0,1.096,0.633,1.418,,,,,,,,,,
+2026-01-01,,88,154,461,0.328,0.190,0.350,com_nielseniq_us_other_entertainment,224,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,154,179,0.546,0.315,0.270,gov_bls_entertainment_3153,212,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,154,180,0.025,0.014,0.102,gov_bls_entertainment_3154,213,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,154,181,0.104,0.060,0.457,gov_bls_entertainment_3155,213,PCE core,415,Recreation Commodities,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,88,154,182,0.038,0.022,0.168,gov_bls_entertainment_3263,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,88,154,911,0.055,0.032,0.071,com_moojing_us_recreation_and_culture,314,PCE core,426,Recreation Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,89,0,0,3.358,1.533,10.050,,,,,,,,,,
+2026-01-01,,89,157,0,3.358,1.533,10.050,,,,,,,,,,
+2026-01-01,,89,157,463,0.570,0.260,1.690,com_nielseniq_us_personal_care,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,89,157,243,0.386,0.176,1.235,gov_bls_personal_care_3182,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,89,157,242,0.115,0.053,0.937,gov_bls_personal_care_3183,224,PCE core,418,Other Goods,All Items,All Items Less Food and Energy,Commodities Less Food and Energy,Goods,Core
+2026-01-01,,89,157,244,1.951,0.891,5.183,gov_bls_personal_care_328,317,PCE core,428,Other Personal Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,89,157,913,0.336,0.153,1.005,com_moojing_us_otherindex_(beauty),317,PCE core,428,Other Personal Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core
+2026-01-01,,,,524,0,0,3.26,gov_bea_pce_final_consumption_expenditures,32,PCE core,428,Other Personal Services,All Items,All Items Less Food and Energy,Services Less Energy,Services,Core

@@ -1,0 +1,92 @@
+{
+  "source": "live",
+  "csv_path": null,
+  "data_range": [
+    "2010-01-01",
+    "2026-04-26"
+  ],
+  "stale_days": 0,
+  "selection_window_days": 180,
+  "min_edge_pct": 2.0,
+  "candidate_summary": [
+    {
+      "model": "median_drift_7d",
+      "n": 180,
+      "rmse": 0.06424426703289908,
+      "mae": 0.03722878333333334,
+      "rmse_reduction_vs_persistence_pct": 0.31033913279708836,
+      "directional_accuracy": 0.5555555555555556
+    },
+    {
+      "model": "persistence",
+      "n": 180,
+      "rmse": 0.06444426279920762,
+      "mae": 0.03672884444444444,
+      "rmse_reduction_vs_persistence_pct": 0.0,
+      "directional_accuracy": 0.0
+    },
+    {
+      "model": "median_drift_30d",
+      "n": 180,
+      "rmse": 0.06482956955924896,
+      "mae": 0.036202475000000005,
+      "rmse_reduction_vs_persistence_pct": -0.5978914853008055,
+      "directional_accuracy": 0.5777777777777777
+    },
+    {
+      "model": "mean_drift_30d",
+      "n": 180,
+      "rmse": 0.06550368034704983,
+      "mae": 0.03688897851851853,
+      "rmse_reduction_vs_persistence_pct": -1.6439284147653277,
+      "directional_accuracy": 0.5666666666666667
+    },
+    {
+      "model": "ewma_drift_14d",
+      "n": 180,
+      "rmse": 0.06642146562935933,
+      "mae": 0.0381903350340831,
+      "rmse_reduction_vs_persistence_pct": -3.0680820049290958,
+      "directional_accuracy": 0.5888888888888889
+    }
+  ],
+  "forecast": {
+    "origin_date": "2026-04-26",
+    "target_date": "2026-04-27",
+    "selected_model": "persistence",
+    "today_yoy_pct": 1.798026,
+    "raw_point_yoy_pct": 1.798026,
+    "bias_correction_pp": 0.0,
+    "median_calibration_error_pp": 0.006672000000000122,
+    "point_yoy_pct": 1.798026,
+    "delta_vs_today_pp": 0.0,
+    "band_80": [
+      1.766042,
+      1.8515249999999999
+    ],
+    "band_95": [
+      1.4958879999999999,
+      1.9086439999999998
+    ],
+    "p_up": 0.5666666666666667,
+    "n_calibration": 90,
+    "calibration_error_mae_pp": 0.03667467777777778
+  },
+  "backtest": {
+    "window_start": "2025-01-01",
+    "window_end": "2026-04-25",
+    "n": 480,
+    "selected_model": "persistence",
+    "rmse_selected": 0.04941865396049013,
+    "rmse_persistence": 0.04941865396049013,
+    "rmse_reduction_vs_persistence_pct": 0.0,
+    "mae_selected": 0.029916833333333337,
+    "mae_persistence": 0.029916833333333337,
+    "coverage_80": 0.8270833333333333,
+    "coverage_95": 0.9583333333333334,
+    "width_80": 0.09185740208333337,
+    "width_95": 0.23894703541666676,
+    "directional_accuracy": 0.5208333333333334,
+    "base_rate_up": 0.4791666666666667
+  }
+}

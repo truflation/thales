@@ -1,0 +1,32 @@
+{
+  "target": "bls_headline_cpi_yoy",
+  "as_of_date": "2026-05-16",
+  "latest_bls_month": "2026-04-30",
+  "latest_bls_yoy": 3.7792458367415627,
+  "next_release_month": "2026-05-31",
+  "thales_standalone": {
+    "point": 4.067619193570984,
+    "band_80": [
+      3.899262602886781,
+      4.2112226855270105
+    ],
+    "band_95": [
+      3.7607764829446766,
+      4.3744619041972905
+    ],
+    "model": "mom_composed_ar1",
+    "track_record": "+37.6% RMSE over Stock-Watson DFM (p=0.0003, n=25)"
+  },
+  "cleveland_fed": {
+    "point": 3.89,
+    "label": "for 2026-05-31 (latest as_of 2026-05-16)"
+  },
+  "blend": {
+    "point": 3.854211281611905,
+    "alpha": 0.18493836686655757,
+    "beta_cleveland": 0.8278615097582791,
+    "gamma_thales": 0.11035734183158823,
+    "n_calibration": 36,
+    "track_record": "+67.8% RMSE over Cleveland alone (p=0.04, n=36)"
+  }
+}

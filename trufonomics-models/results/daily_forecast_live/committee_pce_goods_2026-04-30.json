@@ -1,0 +1,21 @@
+{
+  "target_key": "pce_goods",
+  "target_name": "US PCE Goods YoY",
+  "as_of_date": "2026-04-30",
+  "target_date": "2026-05-01",
+  "today_value": 3.511302,
+  "predictions": {
+    "persistence": 3.511302,
+    "ar1_rolling": 3.5105794995446664
+  },
+  "median": 3.5109407497723333,
+  "range_bp": 0.072250045533373,
+  "n_models": 2,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    3.38332435691694,
+    3.6064022060469085
+  ],
+  "ridge_band_80": null,
+  "ridge_available": false
+}

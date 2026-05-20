@@ -1,0 +1,112 @@
+{
+  "origin_date": "2026-04-24",
+  "target_date": "2026-04-25",
+  "point_yoy_pct": 1.7506984098328249,
+  "raw_point_pre_correction_pct": 1.792378098386139,
+  "bias_correction_pp": -0.041679688553314054,
+  "today_published_yoy": 1.75967,
+  "delta_vs_today_pp": -0.008971590167175192,
+  "band_80": [
+    1.721524236227932,
+    1.778567188671087
+  ],
+  "band_95": [
+    1.5946636958100366,
+    1.805070714779435
+  ],
+  "band_80_width_pp": 0.05704295244315505,
+  "band_95_width_pp": 0.21040701896939829,
+  "ridge_alpha": 0.01,
+  "intercept": 0.11686961289832709,
+  "lag_coef": 0.9949078322696963,
+  "n_train": 1544,
+  "n_calib": 30,
+  "backtest": {
+    "n_origins": 90,
+    "window_start": "2026-01-24",
+    "window_end": "2026-04-23",
+    "rmse_model": 0.07474424301172701,
+    "rmse_naive": 0.0712085334652932,
+    "rmse_reduction_pct": -4.965289094399217,
+    "mae_model": 0.04110745621805645,
+    "coverage_80": 0.7666666666666667,
+    "coverage_95": 0.9222222222222223,
+    "directional_accuracy": 0.5777777777777777,
+    "base_rate_up": 0.5666666666666667,
+    "ship_verdict": "SHIP"
+  },
+  "drivers": [
+    {
+      "category_id": 82,
+      "category_name": "Health",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 88,
+      "category_name": "Recreation & Culture",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 85,
+      "category_name": "Clothing & Footwear",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 84,
+      "category_name": "Alcohol & Tobacco",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 79,
+      "category_name": "Housing",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 81,
+      "category_name": "Utilities",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 78,
+      "category_name": "Food & Non-alcoholic Beverages",
+      "move_pct_7d": 0.0,
+      "contribution_pp": -0.0
+    },
+    {
+      "category_id": 80,
+      "category_name": "Transport",
+      "move_pct_7d": 0.0,
+      "contribution_pp": 0.0
+    },
+    {
+      "category_id": 86,
+      "category_name": "Communications",
+      "move_pct_7d": 0.0,
+      "contribution_pp": 0.0
+    },
+    {
+      "category_id": 89,
+      "category_name": "Other",
+      "move_pct_7d": 0.0,
+      "contribution_pp": 0.0
+    },
+    {
+      "category_id": 83,
+      "category_name": "Household Durables & Daily Use Items",
+      "move_pct_7d": 0.0,
+      "contribution_pp": 0.0
+    },
+    {
+      "category_id": 87,
+      "category_name": "Education",
+      "move_pct_7d": 0.0,
+      "contribution_pp": 0.0
+    }
+  ]
+}

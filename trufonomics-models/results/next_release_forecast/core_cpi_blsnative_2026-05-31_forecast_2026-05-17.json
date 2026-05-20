@@ -1,0 +1,41 @@
+{
+  "target": "bls_headline_core_cpi_yoy",
+  "method": "bls_native_core_cbdf_v2",
+  "as_of_date": "2026-05-17",
+  "latest_core_cpi_month": "2026-04-30",
+  "latest_core_cpi_yoy": 2.7433094309685213,
+  "next_release_month": "2026-05-31",
+  "forward_next_release_forecast": {
+    "origin": "2026-04-30",
+    "next_month": "2026-05-31",
+    "composed_yoy_at_origin": 2.790456824877219,
+    "actual_core_yoy_at_origin": 2.7433094309685213,
+    "anchor_offset_pp": -0.04714739390869749,
+    "composed_yoy_next_raw": 2.8969478257657277,
+    "point": 2.8498004318570302,
+    "lo80": 2.757896956396695,
+    "hi80": 2.963024499310436,
+    "lo95": 2.718812725856168,
+    "hi95": 3.0324395027534186,
+    "n_samples": 500
+  },
+  "composition_validation": {
+    "n": 183,
+    "mean_resid": 0.002041640407212066,
+    "median_resid": -0.017222622115342645,
+    "sd_resid": 0.0807441694254518,
+    "abs_max": 0.2523048719844656,
+    "within_0.1pp": 0.8032786885245902,
+    "within_0.3pp": 1.0
+  },
+  "weight_calibration": {
+    "alpha": 1.3516691132995287,
+    "weights": {
+      "CUSR0000SACL1E": 0.419672732164108,
+      "CUSR0000SASLE": 0.5963321510970244
+    },
+    "sum_weights": 1.0160048832611324,
+    "fit_rmse_level": 0.27865884239619576,
+    "n_obs": 195
+  }
+}

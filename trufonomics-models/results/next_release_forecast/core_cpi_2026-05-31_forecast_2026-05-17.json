@@ -1,0 +1,21 @@
+{
+  "target": "bls_headline_core_cpi_yoy",
+  "as_of_date": "2026-05-17",
+  "latest_cpilfesl_month": "2026-04-30",
+  "latest_cpilfesl_yoy": 2.7433094309685213,
+  "next_release_month": "2026-05-31",
+  "core_cpi_standalone": {
+    "point": 2.865280455591442,
+    "band_80": [
+      2.7582928741039936,
+      2.9404183082114295
+    ],
+    "band_95": [
+      2.712351939741381,
+      3.059230794152501
+    ],
+    "ar1_alpha": 0.21141814495762118,
+    "ar1_phi": 0.10899618042698772,
+    "method": "mom_composed_ar1_on_cpilfesl"
+  }
+}

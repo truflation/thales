@@ -1,0 +1,21 @@
+{
+  "target_key": "pce",
+  "target_name": "US PCE YoY (headline)",
+  "as_of_date": "2026-04-27",
+  "target_date": "2026-04-28",
+  "today_value": 2.50305,
+  "predictions": {
+    "persistence": 2.50305,
+    "ar1_rolling": 2.503365534463909
+  },
+  "median": 2.5032077672319546,
+  "range_bp": 0.031553446390919504,
+  "n_models": 2,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    2.4618401223481734,
+    2.5913068842906344
+  ],
+  "ridge_band_80": null,
+  "ridge_available": false
+}

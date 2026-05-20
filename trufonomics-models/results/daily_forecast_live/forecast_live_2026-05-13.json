@@ -1,0 +1,41 @@
+{
+  "origin_date": "2026-05-13",
+  "target_date": "2026-05-14",
+  "point_yoy_pct": 1.945329,
+  "selected_point_model": "persistence",
+  "raw_point_pre_correction_pct": 1.945329,
+  "ridge_raw_point_pct": 1.9643673879504866,
+  "bias_correction_pp": 0.0,
+  "today_published_yoy": 1.945329,
+  "delta_vs_today_pp": 0.0,
+  "band_80": [
+    1.8879000000000001,
+    2.021859
+  ],
+  "band_95": [
+    1.716226,
+    2.071668
+  ],
+  "band_80_width_pp": 0.13395899999999994,
+  "band_95_width_pp": 0.3554419999999998,
+  "ridge_alpha": 0.1,
+  "intercept": 0.34302624666640646,
+  "lag_coef": 0.9961707209683155,
+  "n_train": 1563,
+  "n_calib": 30,
+  "backtest": {
+    "n_origins": 90,
+    "window_start": "2026-02-12",
+    "window_end": "2026-05-12",
+    "rmse_model": 0.13859283753974327,
+    "rmse_naive": 0.12401885818885233,
+    "rmse_reduction_pct": -11.751421972211773,
+    "mae_model": 0.08418756551229706,
+    "coverage_80": 0.7666666666666667,
+    "coverage_95": 0.9222222222222223,
+    "directional_accuracy": 0.6333333333333333,
+    "base_rate_up": 0.6333333333333333,
+    "ship_verdict": "BASELINE"
+  },
+  "drivers": []
+}

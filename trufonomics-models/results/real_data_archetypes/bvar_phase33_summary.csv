@@ -1,0 +1,5 @@
+vertical,n_obs,n_vars,max_eig,best_target,best_rmse_red_pct,worst_target,worst_rmse_red_pct,scenario_total_$
+retail_midmarket,193,5,0.5164154353545382,mom_sales,46.566387487715275,mom_utilities,14.690007630590983,976148.8440874178
+healthcare_operators,193,4,0.5379266822583665,mom_pharma,26.878152127559108,mom_med_services,12.674980187690688,262445.29995781713
+real_estate_operators,193,5,0.8442510869792832,mom_labor,26.61623120103187,mom_construction_emp,0.338990578323195,962984.329684001
+manufacturing_durables,193,5,0.5458783098195902,mom_logistics,27.475381203189297,mom_ip,-19.195806360752133,1723293.3438508487

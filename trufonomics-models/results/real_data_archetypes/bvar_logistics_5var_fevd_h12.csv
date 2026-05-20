@@ -1,0 +1,6 @@
+response,log_diesel,log_freight,log_maintenance,log_labor,log_volume
+log_diesel,99.5,0.3,0.0,0.0,0.1
+log_freight,7.5,92.5,0.0,0.0,0.0
+log_maintenance,0.5,2.9,96.6,0.0,0.0
+log_labor,0.2,0.0,0.3,99.5,0.0
+log_volume,0.3,0.1,0.0,0.9,98.6

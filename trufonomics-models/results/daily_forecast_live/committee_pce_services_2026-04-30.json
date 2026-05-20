@@ -1,0 +1,21 @@
+{
+  "target_key": "pce_services",
+  "target_name": "US PCE Services YoY",
+  "as_of_date": "2026-04-30",
+  "target_date": "2026-05-01",
+  "today_value": 2.239014,
+  "predictions": {
+    "persistence": 2.239014,
+    "ar1_rolling": 2.2401392437559853
+  },
+  "median": 2.2395766218779927,
+  "range_bp": 0.11252437559852169,
+  "n_models": 2,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    2.2056111993754675,
+    2.290428249558741
+  ],
+  "ridge_band_80": null,
+  "ridge_available": false
+}

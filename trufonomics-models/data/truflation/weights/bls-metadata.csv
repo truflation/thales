@@ -1,0 +1,36 @@
+category_id,category,parent_id
+2,Food,
+21,Food at home,2
+211,Cereals and bakery products,21
+212,"Meats, poultry, fish and eggs",21
+213,Dairy and related products,21
+214,Fruits and vegetables,21
+215,Nonalcoholic beverages,21
+216,Other food at home,21
+22,Food away from home,2
+3,Energy,
+31,Energy commodities,3
+311,Fuel oil and other fuels,31
+312,Motor fuel,31
+32,Energy services,3
+321,Electricity,32
+322,Utility gas service,32
+4,All Items Less Food and Energy,
+41,Commodities Less Food and Energy,4
+411,Household Furnishing and supplies,41
+412,Apparel,41
+413,Transportation Commodities less motor fuel,41
+414,Medical Care Commodities,41
+415,Recreation Commodities,41
+416,Education & Communication Commodities,41
+417,Alcoholic Beverages,41
+418,Other Goods,41
+42,Services Less Energy,4
+421,Housing services,42
+422,Water & Trash collection,42
+423,Household Operations,42
+424,Medical Care Services,42
+425,Transportation Services,42
+426,Recreation Services,42
+427,Education & Communication Services,42
+428,Other Personal Services,42

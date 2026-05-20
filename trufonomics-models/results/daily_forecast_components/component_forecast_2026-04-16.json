@@ -1,0 +1,60 @@
+{
+  "component_source": "vintage",
+  "active_streams": 58,
+  "used_streams": 58,
+  "used_weight_sum": 100.0,
+  "candidate_summary": [
+    {
+      "model": "headline_persistence",
+      "n": 180,
+      "rmse": 0.06429906034811085,
+      "mae": 0.036267094444444446,
+      "rmse_reduction_vs_headline_persistence_pct": 0.0,
+      "directional_accuracy": 0.0
+    },
+    {
+      "model": "component_median_return_7d",
+      "n": 180,
+      "rmse": 0.3511484989999337,
+      "mae": 0.30935976277294075,
+      "rmse_reduction_vs_headline_persistence_pct": -446.117621468866,
+      "directional_accuracy": 0.5388888888888889
+    },
+    {
+      "model": "component_median_return_30d",
+      "n": 180,
+      "rmse": 0.35321520724864464,
+      "mae": 0.3116717706386304,
+      "rmse_reduction_vs_headline_persistence_pct": -449.3318336790008,
+      "directional_accuracy": 0.5333333333333333
+    },
+    {
+      "model": "component_index_persistence",
+      "n": 180,
+      "rmse": 0.3533930545350668,
+      "mae": 0.31142167463004194,
+      "rmse_reduction_vs_headline_persistence_pct": -449.60842759104133,
+      "directional_accuracy": 0.5333333333333333
+    }
+  ],
+  "selected_model": "headline_persistence",
+  "forecast": {
+    "origin_date": "2026-04-16",
+    "target_date": "2026-04-17",
+    "selected_model": "headline_persistence",
+    "point_yoy_pct": 1.900152,
+    "today_headline_yoy_pct": 1.900152,
+    "component_origin_date": "2026-04-16",
+    "headline_origin_date": "2026-04-26",
+    "component_data_stale_days_vs_headline": 10,
+    "band_80": [
+      1.8645500000000002,
+      1.9542590000000002
+    ],
+    "band_95": [
+      1.598014,
+      2.01077
+    ],
+    "calibration_n": 90
+  }
+}

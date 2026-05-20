@@ -1,0 +1,129 @@
+{
+  "origin_date": "2026-04-15",
+  "target_date": "2026-04-16",
+  "point_yoy_pct": 1.8478124990022493,
+  "band_80": [
+    1.7961476785189523,
+    1.9080325134563152
+  ],
+  "band_95": [
+    1.7090981517555883,
+    1.9819666278593613
+  ],
+  "today_published_yoy": 1.82773,
+  "residual_sd_pct": 0.0811869710966526,
+  "ridge_alpha": 0.1,
+  "intercept": 0.3472146246525405,
+  "lag_coef": 0.9962549306811095,
+  "n_train": 1565,
+  "contributions": [
+    {
+      "category_id": 89,
+      "category_name": "Other",
+      "raw_name": "other",
+      "today_index": 149.109214,
+      "coef": 0.007515897347730061,
+      "recent_move_pct": -0.48337796020962753,
+      "contribution_pp": -0.005443478844861532
+    },
+    {
+      "category_id": 88,
+      "category_name": "Recreation & Culture",
+      "raw_name": "recreation_and_culture",
+      "today_index": 127.16487,
+      "coef": -0.005772416951842274,
+      "recent_move_pct": 0.3212468453091105,
+      "contribution_pp": -0.002350557044874878
+    },
+    {
+      "category_id": 80,
+      "category_name": "Transport",
+      "raw_name": "transport",
+      "today_index": 167.227193,
+      "coef": 0.0026361599393638357,
+      "recent_move_pct": 0.2288045709465442,
+      "contribution_pp": 0.001006354056852173
+    },
+    {
+      "category_id": 84,
+      "category_name": "Alcohol & Tobacco",
+      "raw_name": "alcohol_and_tobacco",
+      "today_index": 156.195018,
+      "coef": -0.009524549406627614,
+      "recent_move_pct": -0.05743489545175637,
+      "contribution_pp": 0.0008549426038377787
+    },
+    {
+      "category_id": 85,
+      "category_name": "Clothing & Footwear",
+      "raw_name": "clothing_and_footwear",
+      "today_index": 121.831289,
+      "coef": -0.00023572790462722537,
+      "recent_move_pct": 1.5363792630253712,
+      "contribution_pp": -0.00043455684888734226
+    },
+    {
+      "category_id": 87,
+      "category_name": "Education",
+      "raw_name": "education",
+      "today_index": 157.481722,
+      "coef": 0.0024577916766617136,
+      "recent_move_pct": 0.0984574645510845,
+      "contribution_pp": 0.0003807119307148941
+    },
+    {
+      "category_id": 79,
+      "category_name": "Housing",
+      "raw_name": "housing",
+      "today_index": 172.732469,
+      "coef": -0.0009007509286700355,
+      "recent_move_pct": 0.15583219925420327,
+      "contribution_pp": -0.00024208041508378786
+    },
+    {
+      "category_id": 81,
+      "category_name": "Utilities",
+      "raw_name": "utilities",
+      "today_index": 162.796002,
+      "coef": 0.0002139583853661975,
+      "recent_move_pct": 0.6580160024330499,
+      "contribution_pp": 0.0002276990068327947
+    },
+    {
+      "category_id": 78,
+      "category_name": "Food & Non-alcoholic Beverages",
+      "raw_name": "food_and_non_alcoholic_beverages",
+      "today_index": 153.394637,
+      "coef": -0.0007814838259179169,
+      "recent_move_pct": -0.1367243747279207,
+      "contribution_pp": 0.00016412332570015016
+    },
+    {
+      "category_id": 86,
+      "category_name": "Communications",
+      "raw_name": "communications",
+      "today_index": 84.866056,
+      "coef": -0.00043358944205529326,
+      "recent_move_pct": 0.3672284338919312,
+      "contribution_pp": -0.00013463472483147442
+    },
+    {
+      "category_id": 83,
+      "category_name": "Household Durables & Daily Use Items",
+      "raw_name": "household_durables_and_daily_use_items",
+      "today_index": 141.35282,
+      "coef": 0.0017844791397152449,
+      "recent_move_pct": 0.05149275441687451,
+      "contribution_pp": 0.0001298190729351728
+    },
+    {
+      "category_id": 82,
+      "category_name": "Health",
+      "raw_name": "health",
+      "today_index": 168.073115,
+      "coef": 4.0291514054047184e-05,
+      "recent_move_pct": -0.007065473204565235,
+      "contribution_pp": -4.785020209059e-07
+    }
+  ]
+}

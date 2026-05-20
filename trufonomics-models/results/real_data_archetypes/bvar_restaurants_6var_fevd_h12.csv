@@ -1,0 +1,7 @@
+response,mom_food_cogs,mom_utilities,mom_rent,mom_labor,mom_menu,mom_traffic
+mom_food_cogs,96.0,0.6,0.7,2.1,0.0,0.6
+mom_utilities,5.3,89.2,0.4,5.0,0.1,0.1
+mom_rent,2.6,2.5,88.9,1.7,0.1,4.1
+mom_labor,5.3,0.8,0.4,92.1,1.3,0.0
+mom_menu,1.2,4.5,1.3,1.8,91.2,0.0
+mom_traffic,15.5,1.7,0.2,6.3,0.6,75.5

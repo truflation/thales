@@ -1,0 +1,59 @@
+{
+  "target_release_month": "2026-05-31",
+  "as_of_date": "2026-05-16",
+  "individuals": [
+    {
+      "name": "thales_standalone",
+      "point": 4.067619193570984,
+      "lo80": 3.899262602886781,
+      "hi80": 4.2112226855270105,
+      "lo95": 3.7607764829446766,
+      "hi95": 4.3744619041972905,
+      "source_file": "cpi_2026-05-31_forecast_2026-05-16.json",
+      "as_of": "2026-05-16"
+    },
+    {
+      "name": "bls_native_cbdf",
+      "point": 3.9890606876227475,
+      "lo80": 3.8154640282949392,
+      "hi80": 4.117608596293856,
+      "lo95": 3.7413061720928678,
+      "hi95": 4.627324368388111,
+      "source_file": "cpi_blsnative_2026-05-31_forecast_2026-05-15.json",
+      "as_of": "2026-05-15"
+    },
+    {
+      "name": "truf_weighted_cpi_cbdf",
+      "point": 4.0460415743710065,
+      "lo80": 3.841769563350479,
+      "hi80": 4.196683290265162,
+      "lo95": 3.758175359245285,
+      "hi95": 4.84599210837112,
+      "source_file": "cpi_trufweights_2026-05-31_forecast_2026-05-16.json",
+      "as_of": "2026-05-16"
+    }
+  ],
+  "canonical_committee": {
+    "available": true,
+    "point": 4.0175511309968766,
+    "lo80_union": 3.8154640282949392,
+    "hi80_union": 4.196683290265162,
+    "lo95_union": 3.7413061720928678,
+    "hi95_union": 4.84599210837112,
+    "members": [
+      "bls_native_cbdf",
+      "truf_weighted_cpi_cbdf"
+    ],
+    "bls_native_point": 3.9890606876227475,
+    "truf_weighted_point": 4.0460415743710065
+  },
+  "diagnostic_combinations": {
+    "mean": 4.034240485188246,
+    "median": 4.0460415743710065,
+    "trimmed_mean": 4.0460415743710065,
+    "avg(thales_standalone,bls_native_cbdf)": 4.028339940596865,
+    "avg(thales_standalone,truf_weighted_cpi_cbdf)": 4.056830383970995,
+    "avg(bls_native_cbdf,truf_weighted_cpi_cbdf)": 4.0175511309968766
+  },
+  "actual": null
+}

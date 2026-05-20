@@ -1,0 +1,25 @@
+{
+  "target_key": "cpi",
+  "target_name": "US CPI YoY",
+  "as_of_date": "2026-04-30",
+  "target_date": "2026-05-01",
+  "today_value": 1.949596,
+  "predictions": {
+    "persistence": 1.949596,
+    "ar1_rolling": 1.950156406177817,
+    "ridge_stacker": 1.949596
+  },
+  "median": 1.949596,
+  "range_bp": 0.05604061778168301,
+  "n_models": 3,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    1.8921458381261302,
+    2.0352920922216726
+  ],
+  "ridge_band_80": [
+    1.8921670000000002,
+    2.03535
+  ],
+  "ridge_available": true
+}

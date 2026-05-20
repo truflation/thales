@@ -1,0 +1,55 @@
+# ─── Override parent kairos/.gitignore rules ─────────────────────
+# Parent ignores data/ and results/ globally (for kairos/data and
+# kairos/results which hold older Heimdall work). Re-include them
+# here so trufonomics-models/data/ and trufonomics-models/results/
+# can be tracked.
+!data/
+!results/
+
+# ─── Secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+*.pem
+*.key
+
+# ─── Python ──────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ─── uv ──────────────────────────────────────────────────────────
+.venv/
+.python-version
+
+# ─── Data — large binary blobs stored locally only ───────────────
+data/vintage_store/**
+data/raw/**
+data/synthetic/**
+!data/**/.gitkeep
+
+# ─── Results — track JSON/CSV summaries, drop binary artefacts ───
+results/scratch/**
+results/**/*.pkl
+results/**/*.duckdb
+results/**/*.duckdb-wal
+!results/**/.gitkeep
+
+# ─── Notebooks ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/scratch/
+
+# ─── OS ──────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── IDE ─────────────────────────────────────────────────────────
+.vscode/
+.idea/

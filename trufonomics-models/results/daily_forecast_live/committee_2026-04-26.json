@@ -1,0 +1,21 @@
+{
+  "as_of_date": "2026-04-26",
+  "target_date": "2026-04-27",
+  "today_value": 1.798026,
+  "predictions": {
+    "persistence": 1.798026,
+    "ar1_rolling": 1.798632472899187,
+    "ridge_stacker": 1.787974712083509
+  },
+  "median": 1.798026,
+  "range_bp": 1.065776081567793,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    1.7406219048475002,
+    1.8837681589430426
+  ],
+  "ridge_band_80": [
+    1.7597903025678499,
+    1.824238943421079
+  ]
+}

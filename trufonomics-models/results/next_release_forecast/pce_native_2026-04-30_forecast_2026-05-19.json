@@ -1,0 +1,42 @@
+{
+  "target": "bea_headline_pce_yoy",
+  "method": "pce_native_cbdf",
+  "as_of_date": "2026-05-19",
+  "latest_pcepi_month": "2026-03-31",
+  "latest_pcepi_yoy": 3.496081498479442,
+  "next_release_month": "2026-04-30",
+  "forward_next_release_forecast": {
+    "origin": "2026-03-31",
+    "next_month": "2026-04-30",
+    "composed_yoy_at_origin": 3.45945916917878,
+    "actual_pcepi_yoy_at_origin": 3.496081498479442,
+    "anchor_offset_pp": 0.03662232930066178,
+    "composed_yoy_next_raw": 3.7454007274942747,
+    "point": 3.7820230567949364,
+    "lo80": 3.642234582295567,
+    "hi80": 3.959229743047634,
+    "lo95": 3.5679161050785235,
+    "hi95": 4.137925765703872,
+    "n_samples": 500
+  },
+  "composition_validation": {
+    "n": 183,
+    "mean_resid": 0.004053779656926791,
+    "median_resid": 0.010488245944673125,
+    "sd_resid": 0.09304361574828503,
+    "abs_max": 0.33134581388647444,
+    "within_0.1pp": 0.8360655737704918,
+    "within_0.3pp": 0.9890710382513661
+  },
+  "weight_calibration": {
+    "alpha": 2.066602834470099,
+    "weights": {
+      "DDURRG3M086SBEA": 0.07808555058663587,
+      "DNDGRG3M086SBEA": 0.23176419769201592,
+      "DSERRG3M086SBEA": 0.6691823107834086
+    },
+    "sum_weights": 0.9790320590620605,
+    "fit_rmse_level": 0.09205386683209298,
+    "n_obs": 195
+  }
+}

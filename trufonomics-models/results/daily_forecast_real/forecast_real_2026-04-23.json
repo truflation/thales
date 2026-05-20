@@ -1,0 +1,91 @@
+{
+  "csv_path": "/Users/kluless/Downloads/Truflation_US_CPI_Data_(Frozen) (1).csv",
+  "data_range": [
+    "2011-01-01",
+    "2026-04-23"
+  ],
+  "stale_days": 3,
+  "selection_window_days": 180,
+  "min_edge_pct": 2.0,
+  "candidate_summary": [
+    {
+      "model": "median_drift_30d",
+      "n": 180,
+      "rmse": 0.10487289483422875,
+      "mae": 0.05932748962044371,
+      "rmse_reduction_vs_persistence_pct": 0.5597202074986818,
+      "directional_accuracy": 0.5555555555555556
+    },
+    {
+      "model": "persistence",
+      "n": 180,
+      "rmse": 0.10546319364050814,
+      "mae": 0.06009468333419654,
+      "rmse_reduction_vs_persistence_pct": 0.0,
+      "directional_accuracy": 0.0
+    },
+    {
+      "model": "median_drift_7d",
+      "n": 180,
+      "rmse": 0.10622457156708492,
+      "mae": 0.06029050224376821,
+      "rmse_reduction_vs_persistence_pct": -0.7219371045903422,
+      "directional_accuracy": 0.5611111111111111
+    },
+    {
+      "model": "mean_drift_30d",
+      "n": 180,
+      "rmse": 0.10628423921596833,
+      "mae": 0.06171753573765378,
+      "rmse_reduction_vs_persistence_pct": -0.7785138559893046,
+      "directional_accuracy": 0.5277777777777778
+    },
+    {
+      "model": "ewma_drift_14d",
+      "n": 180,
+      "rmse": 0.10960099911954793,
+      "mae": 0.06556714135612512,
+      "rmse_reduction_vs_persistence_pct": -3.9234593000704088,
+      "directional_accuracy": 0.4777777777777778
+    }
+  ],
+  "forecast": {
+    "origin_date": "2026-04-23",
+    "target_date": "2026-04-24",
+    "selected_model": "persistence",
+    "today_yoy_pct": 1.844372,
+    "raw_point_yoy_pct": 1.844372,
+    "bias_correction_pp": 0.0,
+    "median_calibration_error_pp": 0.007225499999999885,
+    "point_yoy_pct": 1.844372,
+    "delta_vs_today_pp": 0.0,
+    "band_80": [
+      1.787977,
+      1.9345255361671034
+    ],
+    "band_95": [
+      1.378475,
+      2.109161207299354
+    ],
+    "p_up": 0.5888888888888889,
+    "n_calibration": 90,
+    "calibration_error_mae_pp": 0.07076142353005621
+  },
+  "backtest": {
+    "window_start": "2025-01-01",
+    "window_end": "2026-04-22",
+    "n": 477,
+    "selected_model": "persistence",
+    "rmse_selected": 0.09317065127549844,
+    "rmse_persistence": 0.09317065127549844,
+    "rmse_reduction_vs_persistence_pct": 0.0,
+    "mae_selected": 0.0519603270443509,
+    "mae_persistence": 0.0519603270443509,
+    "coverage_80": 0.8071278825995807,
+    "coverage_95": 0.9454926624737946,
+    "width_80": 0.14796748791607336,
+    "width_95": 0.46430405142881603,
+    "directional_accuracy": 0.5073375262054507,
+    "base_rate_up": 0.49266247379454925
+  }
+}

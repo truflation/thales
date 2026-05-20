@@ -1,0 +1,22 @@
+category_id,category,parent_id
+2,Goods,
+21,Durable goods,2
+211,Motor vehicles and parts,21
+212,Furnishings and durable household equipment,21
+213,Recreational goods and vehicles,21
+214,Other durable goods,21
+22,Nondurable goods,2
+221,Food and beverages purchased for off-premises consumption,22
+222,Clothing and footwear,22
+223,Gasoline and other energy goods,22
+224,Other nondurable goods,22
+3,Services,
+31,Household consumption expenditures (for services),3
+311,Housing and utilities,31
+312,Health care,31
+313,Transportation services,31
+314,Recreation services,31
+315,Food services and accommodations,31
+316,Financial services and insurance,31
+317,Other services,31
+32,Final consumption expenditures of nonprofit institutions serving households (NPISHs),3

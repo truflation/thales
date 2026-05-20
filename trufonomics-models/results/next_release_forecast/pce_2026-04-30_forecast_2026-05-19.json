@@ -1,0 +1,26 @@
+{
+  "target": "bea_headline_pce_yoy",
+  "as_of_date": "2026-05-19",
+  "latest_pcepi_month": "2026-03-31",
+  "latest_pcepi_level": 130.344,
+  "latest_pcepi_yoy": 3.496081498479442,
+  "next_release_month": "2026-04-30",
+  "pce_standalone": {
+    "point": 3.764276745501308,
+    "band_80": [
+      3.61983965920837,
+      3.8555868673167124
+    ],
+    "band_95": [
+      3.488766405567445,
+      4.1189506655266035
+    ],
+    "ar1_alpha": 0.14225599704089956,
+    "ar1_phi": 0.4407277485216229,
+    "method": "mom_composed_ar1_on_pcepi"
+  },
+  "cleveland_fed": {
+    "point": 3.83,
+    "label": "for 2026-04-30 (latest as_of 2026-05-19)"
+  }
+}

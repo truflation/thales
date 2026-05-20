@@ -1,0 +1,184 @@
+id,Index,parent_id,child_id,name,Relative importance,Core v Non-core,Current Adj,1y ago Adj
+78,Truflation US New,,78,Food & Non-alcoholic Beverages,15.3,,,
+79,Truflation US New,,79,Housing,23.2,,,
+80,Truflation US New,,80,Transport,19.832,,,
+81,Truflation US New,,81,Utilities,5.899,,,
+82,Truflation US New,,82,Health,8.545,,,
+83,Truflation US New,,83,Household Durables & Daily Use Items,7.164,,,
+84,Truflation US New,,84,Alcohol & Tobacco,1.9,,,
+85,Truflation US New,,85,Clothing & Footwear,3.8,,,
+86,Truflation US New,,86,Communications,3.176,,,
+87,Truflation US New,,87,Education,2.334,,,
+88,Truflation US New,,88,Recreation & Culture,5.606,,,
+89,Truflation US New,,89,Other,3.244,,,
+90,Truflation US New,78,90,Food at home,10.335,,,
+91,Truflation US New,78,91,Food away from home,4.965,,,
+92,Truflation US New,90,92,Cereals and bakery products,1.338,,,
+93,Truflation US New,90,93,"Meats, poultry, fish and eggs",2.248,,,
+94,Truflation US New,90,94,Dairy products,0.991,,,
+95,Truflation US New,90,95,Fruits and vegetables,2.043,,,
+96,Truflation US New,90,96,Other food at home,3.715,,,
+97,Truflation US New,79,97,Owned dwellings,13.757,,,
+98,Truflation US New,79,98,Rented dwellings,8.114,,,
+99,Truflation US New,79,99,Other lodging,1.329,,,
+100,Truflation US New,97,100,Mortgage interest and charges,5.453,,,
+101,Truflation US New,97,101,Property taxes,4.331,,,
+102,Truflation US New,97,102,"Maintenance, repairs, insurance, other expenses",3.973,,,
+103,Truflation US New,80,103,Vehicle purchases (net outlay),9.132,,,
+104,Truflation US New,80,104,"Gasoline, other fuels, and motor oil",3.165,,,
+105,Truflation US New,80,105,Other vehicle expenses,7.004,,,
+106,Truflation US New,80,106,Public and other transportation,0.531,,,
+107,Truflation US New,103,107,"Cars and trucks, new",4.217,,,
+108,Truflation US New,103,108,"Cars and trucks, used",4.764,,,
+109,Truflation US New,103,109,Other vehicles,0.151,,,
+110,Truflation US New,105,110,Vehicle finance charges,0.521,,,
+111,Truflation US New,105,111,Maintenance and repairs,1.774,,,
+112,Truflation US New,105,112,"Vehicle rental, leases, licenses, and other charges",1.53,,,
+113,Truflation US New,105,113,Vehicle insurance,3.179,,,
+114,Truflation US New,81,114,Natural gas,0.899,,,
+115,Truflation US New,81,115,Electricity,3.291,,,
+116,Truflation US New,81,116,Fuel oil and other fuels,0.228,,,
+117,Truflation US New,81,117,Water and other public services,1.481,,,
+118,Truflation US New,82,118,Health insurance,6.052,,,
+119,Truflation US New,82,119,Medical services,1.426,,,
+120,Truflation US New,82,120,Drugs,0.786,,,
+121,Truflation US New,82,121,Medical supplies,0.281,,,
+122,Truflation US New,83,122,Household Operations,2.258,,,
+123,Truflation US New,83,123,Housekeeping supplies,1.288,,,
+124,Truflation US New,83,124,Household furnishings and equipment,3.618,,,
+125,Truflation US New,122,125,Personal services,0.535,,,
+126,Truflation US New,122,126,Other household expenses,1.723,,,
+127,Truflation US New,123,127,Laundry and cleaning supplies,0.262,,,
+128,Truflation US New,123,128,Other household products,0.826,,,
+129,Truflation US New,123,129,Postage and stationery,0.2,,,
+130,Truflation US New,124,130,Household textiles,0.179,,,
+131,Truflation US New,124,131,Furniture,0.823,,,
+132,Truflation US New,124,132,Floor coverings,0.046,,,
+133,Truflation US New,124,133,Major appliances,0.546,,,
+134,Truflation US New,124,134,"Small appliances, miscellaneous housewares",0.208,,,
+135,Truflation US New,124,135,Miscellaneous household equipment,1.816,,,
+136,Truflation US New,84,136,Alcoholic beverages,1.145,,,
+137,Truflation US New,84,137,Tobacco Products and Smoking Supplies,0.755,,,
+138,Truflation US New,85,138,Men and boys,0.864,,,
+139,Truflation US New,85,139,Women and girls,1.444,,,
+140,Truflation US New,85,140,Children under 2,0.18,,,
+141,Truflation US New,85,141,Footwear,0.832,,,
+142,Truflation US New,85,142,Other apparel products and services,0.48,,,
+143,Truflation US New,138,143,"Men, 16 and over",0.636,,,
+144,Truflation US New,138,144,"Boys, 2 to 15",0.228,,,
+145,Truflation US New,139,145,"Women, 16 and over",1.208,,,
+146,Truflation US New,139,146,"Girls, 2 to 15",0.236,,,
+147,Truflation US New,86,147,"Residential phone service, VOIP, and phone cards",0.414,,,
+148,Truflation US New,86,148,Cellular phone service,2.762,,,
+149,Truflation US New,87,149,Reading,0.192,,,
+150,Truflation US New,87,150,Education,2.142,,,
+151,Truflation US New,88,151,Fees and admissions,0.818,,,
+152,Truflation US New,88,152,Audio and visual equipment and services,2.019,,,
+153,Truflation US New,88,153,"Pets, toys, hobbies, and playground equipment",1.655,,,
+154,Truflation US New,88,154,"Other entertainment supplies, equipment, and services",1.114,,,
+155,Truflation US New,153,155,Pets,1.328,,,
+156,Truflation US New,153,156,"Toys, hobbies, and playground equipment",0.327,,,
+157,Truflation US New,89,157,Personal Care products and services,3.244,,,
+158,Truflation US New,92,168,Cereals and bakery products CPI,0.3345,Other,47.25425366,42.68285372
+159,Truflation US New,93,169,"Meats, poultry, fish and eggs CPI",0.562,Other,88.61631402,88.17477797
+160,Truflation US New,94,170,Dairy products CPI,0.24775,Other,33.56976449,32.08848725
+161,Truflation US New,95,171,Fruits and vegetables CPI,0.51075,Other,62.64294003,62.24668543
+162,Truflation US New,96,172,Other food at home CPI,0.62958,Other,89.00068611,81.51833775
+163,Truflation US New,92,173,Cereals and bakery products NielsenIQ,0.669,Other,97.04068027,86.93811427
+164,Truflation US New,93,174,"Meats, poultry, fish and eggs NielsenIQ",1.124,Other,179.3472833,177.2960623
+165,Truflation US New,94,175,Dairy products NielsenIQ,0.4955,Other,70.6011901,66.03445506
+166,Truflation US New,95,176,Fruits and vegetables NielsenIQ,1.0215,Other,149.7573916,135.8272037
+167,Truflation US New,96,177,Other food at home NielsenIQ,1.25916,Other,180.3593232,164.2312669
+168,Truflation US New,92,178,Food YF,0.3345,Other,526.9599105,581.8865817
+169,Truflation US New,93,178,Food YF,0.562,Other,526.9599105,581.8865817
+170,Truflation US New,94,178,Food YF,0.24775,Other,526.9599105,581.8865817
+171,Truflation US New,95,178,Food YF,0.51075,Other,526.9599105,581.8865817
+172,Truflation US New,96,178,Food YF,0.92875,Other,526.9599105,581.8865817
+173,Truflation US New,91,183,Food away from home CPI,1.655,Other,259.6686141,239.8453467
+174,Truflation US New,91,184,Food away from home BigMac,1.655,Other,238.0796089,261.1941341
+175,Truflation US New,91,178,Food YF,1.655,Other,526.9599105,581.8865817
+186,Truflation US New,100,479,ACY index,1.8177,Core,1416.891488,1424.895865
+187,Truflation US New,101,479,ACY index,2.1655,Core,1416.891488,1424.895865
+188,Truflation US New,102,479,ACY index,1.9865,Core,1416.891488,1424.895865
+189,Truflation US New,98,479,ACY index,2.0285,Core,1416.891488,1424.895865
+190,Truflation US New,98,186,Rented dwellings Zillow,2.0285,Core,357.9865892,341.6287593
+191,Truflation US New,99,187,Other lodging CPI,1.329,Core,212.7659495,205.7594786
+192,Truflation US New,107,188,"Cars and Trucks, new KBB",2.1085,Core,280.2708667,272.2256697
+193,Truflation US New,107,189,"Cars and Trucks, new CPI",2.1085,Core,272.5292062,260.4033897
+194,Truflation US New,108,190,"Cars and Trucks, used CarGurus",1.588,Core,236.3671243,245.681417
+195,Truflation US New,108,191,"Cars and Trucks, used UVVI",1.588,Core,261.8151745,289.0449165
+196,Truflation US New,108,192,"Cars and Trucks, used JDPower",1.588,Core,352.536,354.4416
+197,Truflation US New,109,193,Other vehicles CPI,0.151,Core,19.51714969,18.64876066
+198,Truflation US New,104,194,Gasoline (all types) AAA,1.5495,Other,207.3188523,280.471896
+199,Truflation US New,104,195,Gasoline (all types) EIA,1.5495,Other,212.05216,289.8182006
+200,Truflation US New,104,196,Other fuels and motor oil AAA,0.033,Other,4.509525094,6.716549434
+201,Truflation US New,104,197,Other fuels and motor oil CPI,0.033,Other,4.694335547,6.364961533
+202,Truflation US New,110,198,Vehicle finance charges CPI,0.521,Core,60.78774192,43.39003879
+203,Truflation US New,111,199,Maintenance and repairs CPI,1.774,Core,273.2023717,240.7488351
+204,Truflation US New,112,200,"Vehicle rental, leases, licenses, and other charges CPI 3252",0.229,Core,33.62521297,38.39317846
+205,Truflation US New,112,201,"Vehicle rental, leases, licenses, and other charges CPI 3255",1.301,Core,162.64773,157.8550672
+206,Truflation US New,113,202,Vehicle insurance CPI,3.179,Core,601.8794235,514.1033049
+207,Truflation US New,106,203,Public and other transportation CPI,0.531,Core,63.97825503,70.22999154
+208,Truflation US New,114,204,Natural gas EIA,0.4495,Other,61.59341856,59.63536932
+209,Truflation US New,114,205,Natural gas CPI,0.4495,Other,49.97869367,56.15483662
+210,Truflation US New,115,206,Electricity EIA,1.6455,Other,252.707388,230.7464728
+211,Truflation US New,115,207,Electricity CPI,1.6455,Other,230.7844938,217.8654572
+212,Truflation US New,116,208,Fuel oil and other fuels CPI,0.228,Other,29.07481004,40.72476981
+213,Truflation US New,117,209,Water and other public services CPI,1.481,Core,254.1355065,240.3974445
+214,Truflation US New,118,210,Medical care services CPI 324,6.052,Core,1096.460132,1097.392719
+215,Truflation US New,119,210,Medical care services CPI 324,1.426,Core,1096.460132,1097.392719
+216,Truflation US New,120,211,Drugs CPI,0.786,Core,102.6144567,98.6817267
+217,Truflation US New,121,212,Medical supplies CPI,0.281,Core,31.1204069,28.21759436
+218,Truflation US New,125,213,Personal services CPI,0.535,Core,79.58301577,74.72198845
+219,Truflation US New,126,214,Other household expenses CPI 3232,0.867,Core,138.2186212,127.0135319
+220,Truflation US New,126,215,Other household expenses CPI 3233,0.284,Core,47.2364662,47.64326159
+221,Truflation US New,126,216,Other household expenses CPI 3234,0.572,Core,109.5059744,90.05064513
+222,Truflation US New,127,217,Laundry and cleaning supplies CPI 3116,0.262,Core,139.0376878,128.1832702
+223,Truflation US New,128,217,Laundry and cleaning supplies CPI 3116,0.826,Core,139.0376878,128.1832702
+224,Truflation US New,129,218,Postage and stationery CPI,0.2,Core,31.86645164,29.96534331
+225,Truflation US New,130,245,Household textiles CPI 31112,0.052,Core,4.954220792,4.976648558
+226,Truflation US New,130,246,Household textiles CPI 31113,0.127,Core,8.846241664,8.79824865
+227,Truflation US New,131,247,Furniture CPI 3112,0.823,Core,91.42571679,91.89792114
+228,Truflation US New,132,248,Floor coverings CPI 31111,0.046,Core,5.375916969,4.991758894
+229,Truflation US New,133,249,Major appliances CPI 31131,0.546,Core,52.29463002,58.07729387
+230,Truflation US New,134,250,"Small appliances, miscellaneous housewares CPI 31132",0.208,Core,22.04814106,20.84034452
+231,Truflation US New,135,251,Miscellaneous household equipment CPI 3115,1.137,Core,140.3989887,129.0216414
+232,Truflation US New,135,252,Miscellaneous household equipment CPI 3114,0.679,Core,51.50889516,51.28281095
+233,Truflation US New,136,219,Alcoholic beverages CPI,0.5725,Core,73.43746768,70.09309423
+234,Truflation US New,136,220,Alcoholic beverages NielsenIQ,0.5725,Core,69.68602007,65.12956214
+235,Truflation US New,137,221,Tobacco Products and Smoking Supplies CPI,0.3775,Core,68.27390301,64.21890255
+236,Truflation US New,137,222,Tobacco Products and Smoking Supplies NielsenIQ,0.3775,Core,69.34368594,64.33994519
+237,Truflation US New,143,223,"Men, 16 and over CPI",0.636,Core,72.62580101,69.75091214
+238,Truflation US New,144,224,"Boys, 2 to 15 CPI",0.228,Core,28.24048341,27.78995909
+239,Truflation US New,145,225,"Women, 16 and over CPI",1.208,Core,128.031809,122.8566896
+240,Truflation US New,146,226,"Girls, 2 to 15 CPI",0.236,Core,26.17124272,24.51072045
+241,Truflation US New,140,227,Children under 2 CPI,0.18,Core,20.22154917,19.53459664
+242,Truflation US New,141,228,Footwear CPI,0.832,Core,94.72719469,94.57021972
+243,Truflation US New,142,229,Other apparel products and services CPI,0.48,Core,64.4027631,60.29939049
+244,Truflation US New,147,230,"Residential phone service, VOIP, and phone cards CPI",0.414,Core,61.38357819,58.00885439
+245,Truflation US New,148,231,Cellular phone service CPI,2.762,Core,210.4474728,209.1214818
+246,Truflation US New,149,232,Reading CPI,0.192,Core,27.15182589,27.50394985
+247,Truflation US New,150,233,Education CPI 3271,1.638,Core,241.7241814,233.3534703
+248,Truflation US New,150,234,Education CPI 3274,0.504,Core,55.23589157,53.70391824
+249,Truflation US New,151,235,Fees and admissions CPI,0.818,Core,108.5103665,102.8975163
+250,Truflation US New,152,236,Audio and visual equipment and services CPI 3162,0.407,Core,16.8755503,18.26183602
+251,Truflation US New,152,237,Audio and visual equipment and services CPI 3151,0.284,Core,9.752877818,10.1590077
+252,Truflation US New,152,238,Audio and visual equipment and services CPI 3261,1.328,Core,198.1714536,189.6341221
+253,Truflation US New,155,239,Pets CPI 3152,0.699,Core,87.99052362,79.55654044
+254,Truflation US New,155,240,Pets CPI 3262,0.629,Core,110.3320935,100.1075737
+255,Truflation US New,156,241,"Toys, hobbies, and playground equipment CPI",0.327,Core,19.59942697,19.18852236
+256,Truflation US New,154,179,"Other entertainment supplies, equipment, and services CPI 3153",0.853,Core,91.05527964,91.89073508
+257,Truflation US New,154,180,"Other entertainment supplies, equipment, and services CPI 3154",0.038,Core,3.279496413,3.124222766
+258,Truflation US New,154,181,"Other entertainment supplies, equipment, and services CPI 3155",0.163,Core,21.36715052,20.75964674
+259,Truflation US New,154,182,"Other entertainment supplies, equipment, and services CPI 3263",0.06,Core,7.355828276,7.047223149
+260,Truflation US New,157,242,Personal Care products and services CPI 3183,0.253,Core,25.31367614,24.37059247
+261,Truflation US New,157,243,Personal Care products and services CPI 3182,0.849,Core,92.7041373,86.23789713
+262,Truflation US New,157,244,Personal Care products and services CPI 328,2.142,Core,318.524414,298.5983355
+263,Truflation US New,96,253,Beverages CPI,0.29917,Other,39.56302278,36.40214818
+264,Truflation US New,96,254,Beverages NielsenIQ,0.59834,Other,80.15423904,74.16705112
+490,Truflation US New,98,332,Redfin Rented Dwellings,2.0285,Core,385.2588683,386.6106538
+491,Truflation US New,98,334,ApartmentList Rented Dwellings,2.0285,Core,368.6126085,365.3673031
+492,Truflation US New,100,330,Redfin Mortgage Rates,1.8176,Core,561.0730633,494.4616494
+493,Truflation US New,100,336,Owners equivalent rent of residences CPI,1.8177,Core,2703.370866,2501.980649
+494,Truflation US New,101,336,Owners equivalent rent of residences CPI,2.1655,Core,2703.370866,2501.980649
+495,Truflation US New,102,336,Owners equivalent rent of residences CPI,1.9865,Core,2703.370866,2501.980649

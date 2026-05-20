@@ -1,0 +1,42 @@
+{
+  "target": "bls_headline_core_cpi_yoy",
+  "method": "truf_weighted_core_cbdf",
+  "as_of_date": "2026-05-17",
+  "latest_core_cpi_month": "2026-04-30",
+  "latest_core_cpi_yoy": 2.7433094309685213,
+  "next_release_month": "2026-05-31",
+  "forward_next_release_forecast": {
+    "origin": "2026-04-30",
+    "next_month": "2026-05-31",
+    "composed_yoy_at_origin": 3.9264398875898054,
+    "actual_core_yoy_at_origin": 2.7433094309685213,
+    "anchor_offset_pp": -1.1831304566212841,
+    "composed_yoy_next_raw": 4.275471987024648,
+    "point": 3.092341530403364,
+    "lo80": 2.843914712499589,
+    "hi80": 3.2683455504526426,
+    "lo95": 2.748238810288787,
+    "hi95": 4.105702848174041,
+    "n_samples": 500
+  },
+  "composition_validation": {
+    "n": 183,
+    "mean_resid": -0.21486689617584606,
+    "median_resid": -0.4053846596673294,
+    "sd_resid": 1.3005581057685607,
+    "abs_max": 3.4427463442911588,
+    "within_0.1pp": 0.0546448087431694,
+    "within_0.3pp": 0.16393442622950818
+  },
+  "weights_used": {
+    "CUSR0000SAH1": 29.364293871336123,
+    "CUSR0000SAT": 25.0742291587362,
+    "CUSR0000SAM": 11.15975130059637,
+    "CUSR0000SAH3": 8.946834158101764,
+    "CUSR0000SEFW": 2.323309224717675,
+    "CUSR0000SAA": 4.776043649283086,
+    "CUSR0000SAE": 7.096815124984138,
+    "CUSR0000SAR": 6.997842913335871,
+    "CUSR0000SAG": 4.260880598908768
+  }
+}

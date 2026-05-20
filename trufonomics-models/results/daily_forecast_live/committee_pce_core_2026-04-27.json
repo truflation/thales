@@ -1,0 +1,21 @@
+{
+  "target_key": "pce_core",
+  "target_name": "US Core PCE YoY (ex food, energy)",
+  "as_of_date": "2026-04-27",
+  "target_date": "2026-04-28",
+  "today_value": 2.31899,
+  "predictions": {
+    "persistence": 2.31899,
+    "ar1_rolling": 2.3195194391989014
+  },
+  "median": 2.3192547195994506,
+  "range_bp": 0.05294391989014713,
+  "n_models": 2,
+  "verdict": "\u2705 SHIP MEDIAN  (high confidence \u2014 committee agrees within 5 bp)",
+  "ar1_band_80": [
+    2.287592857874014,
+    2.3803690290331527
+  ],
+  "ridge_band_80": null,
+  "ridge_available": false
+}
