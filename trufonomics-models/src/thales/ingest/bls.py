@@ -104,6 +104,11 @@ BLS_PANEL: list[BLSSeriesSpec] = [
     BLSSeriesSpec("CUSR0000SETD",     "transport",  "Motor vehicle maintenance and repair, SA"),
     BLSSeriesSpec("CUSR0000SETE",     "transport",  "Motor vehicle insurance, SA"),
     BLSSeriesSpec("CUSR0000SETG",     "transport",  "Public transportation, SA"),
+
+    # NSA (Not Seasonally Adjusted) equivalents — input for X-13ARIMA-SEATS
+    # replication exercise. CUUR prefix = Consumer-price Urban URban (NSA).
+    BLSSeriesSpec("CUUR0000SA0",      "headline_nsa", "All items, NSA — headline CPI"),
+    BLSSeriesSpec("CUUR0000SA0L1E",   "core_nsa",     "All items less food and energy, NSA — core CPI"),
 ]
 
 
