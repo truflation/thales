@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-05-20",
+  "as_of_date": "2026-05-21",
   "x13_binary": "/opt/homebrew/bin/x13as",
   "weights_used": {
     "78": 15.229,
@@ -378,7 +378,7 @@
     }
   ],
   "composed": {
-    "name": "composed_headline",
+    "name": "truflation_us_cpi_composed",
     "status": "ok",
     "n_months": 197,
     "window_start": "2010-01-31",
@@ -390,8 +390,8 @@
     "sa_mom_sd_pp": 0.3272980695062362,
     "sd_reduction_pct": 24.147964581493277,
     "mean_abs_sa_nsa_gap_pct": 0.4443603793612623,
-    "csv_path": "results/x13_replication/sa_truflation_composed_headline.csv",
-    "pattern_path": "results/x13_replication/sa_truflation_pattern_composed_headline.csv",
+    "csv_path": "results/x13_replication/sa_truflation_truflation_us_cpi_composed.csv",
+    "pattern_path": "results/x13_replication/sa_truflation_pattern_truflation_us_cpi_composed.csv",
     "monthly_pattern_pct": {
       "Jan": -0.8036,
       "Feb": -0.5616,

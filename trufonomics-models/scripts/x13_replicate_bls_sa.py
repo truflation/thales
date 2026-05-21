@@ -254,12 +254,19 @@ def main() -> None:
         print(f"    YoY diff (pp):     RMSE = {yp['rmse_pp']:.5f} pp   "
                 f"max |diff| = {yp['max_abs_pp']:.4f} pp")
 
-        # Persist per-series CSV with our SA, BLS SA, and the deltas
+        # Persist per-series CSV with our SA, BLS SA, the deltas, and the
+        # seasonal factors X-13 applied each month. Multiplicative form:
+        # factor = NSA / SA. factor > 1 ⇒ that month's reading was "high"
+        # vs the deseasonalized trend; factor < 1 ⇒ "low".
         out_df = pd.DataFrame({
             "nsa_input":         nsa,
             "our_x13_sa":        our_sa,
             "bls_published_sa":  bls_sa,
         }).dropna()
+        out_df["our_seasonal_factor"] = out_df["nsa_input"] / out_df["our_x13_sa"]
+        out_df["our_seasonal_pct"]    = (out_df["our_seasonal_factor"] - 1.0) * 100
+        out_df["bls_seasonal_factor"] = out_df["nsa_input"] / out_df["bls_published_sa"]
+        out_df["bls_seasonal_pct"]    = (out_df["bls_seasonal_factor"] - 1.0) * 100
         out_df["our_minus_bls_level"] = (
             out_df["our_x13_sa"] - out_df["bls_published_sa"])
         out_df["our_minus_bls_pct"] = (
@@ -267,6 +274,19 @@ def main() -> None:
         csv_path = OUT_DIR / f"x13_replication_{nsa_id}.csv"
         out_df.to_csv(csv_path)
         print(f"    Saved per-month CSV: {csv_path}")
+
+        # Typical seasonal pattern by calendar month for both our X-13 and
+        # BLS's published — readable side-by-side check.
+        pattern_df = (out_df.assign(cal_month=lambda d: d.index.month)
+                              .groupby("cal_month")[["our_seasonal_pct",
+                                                          "bls_seasonal_pct"]]
+                              .mean()
+                              .round(4))
+        pattern_df.index = pd.Index([pd.Timestamp(2026, m, 1).strftime("%b")
+                                        for m in pattern_df.index], name="month")
+        pattern_path = OUT_DIR / f"x13_replication_pattern_{nsa_id}.csv"
+        pattern_df.to_csv(pattern_path)
+        print(f"    Saved seasonal pattern: {pattern_path}")
 
     con.close()
 

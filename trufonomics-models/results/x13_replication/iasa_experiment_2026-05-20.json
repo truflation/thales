@@ -1,0 +1,166 @@
+{
+  "as_of_date": "2026-05-20",
+  "x13_binary": "/opt/homebrew/bin/x13as",
+  "variants": {
+    "A_baseline": [],
+    "B_covid": [
+      {
+        "name": "covid_2020m03",
+        "type": "AO",
+        "date": "2020-03"
+      },
+      {
+        "name": "covid_2020m04",
+        "type": "AO",
+        "date": "2020-04"
+      },
+      {
+        "name": "covid_2020m05",
+        "type": "AO",
+        "date": "2020-05"
+      }
+    ],
+    "C_covid_energy": [
+      {
+        "name": "covid_2020m03",
+        "type": "AO",
+        "date": "2020-03"
+      },
+      {
+        "name": "covid_2020m04",
+        "type": "AO",
+        "date": "2020-04"
+      },
+      {
+        "name": "covid_2020m05",
+        "type": "AO",
+        "date": "2020-05"
+      },
+      {
+        "name": "energy_2022m03",
+        "type": "AO",
+        "date": "2022-03"
+      },
+      {
+        "name": "energy_2022m06",
+        "type": "AO",
+        "date": "2022-06"
+      }
+    ],
+    "D_covid_energy_25": [
+      {
+        "name": "covid_2020m03",
+        "type": "AO",
+        "date": "2020-03"
+      },
+      {
+        "name": "covid_2020m04",
+        "type": "AO",
+        "date": "2020-04"
+      },
+      {
+        "name": "covid_2020m05",
+        "type": "AO",
+        "date": "2020-05"
+      },
+      {
+        "name": "energy_2022m03",
+        "type": "AO",
+        "date": "2022-03"
+      },
+      {
+        "name": "energy_2022m06",
+        "type": "AO",
+        "date": "2022-06"
+      },
+      {
+        "name": "disinfl_2025m03",
+        "type": "AO",
+        "date": "2025-03"
+      },
+      {
+        "name": "disinfl_2025m04",
+        "type": "AO",
+        "date": "2025-04"
+      }
+    ]
+  },
+  "results": {
+    "CUUR0000SA0": [
+      {
+        "variant": "A_baseline",
+        "status": "ok",
+        "n_events": 0,
+        "level_rmse_pct": 0.07428235872425426,
+        "level_max_pct": 0.2884377174467323,
+        "mom_rmse_pp": 0.07221754664436365,
+        "mom_max_pp": 0.39081421121647253
+      },
+      {
+        "variant": "B_covid",
+        "status": "ok",
+        "n_events": 3,
+        "level_rmse_pct": 0.07603148032196322,
+        "level_max_pct": 0.293359735301979,
+        "mom_rmse_pp": 0.0739031741712797,
+        "mom_max_pp": 0.3970978183604146
+      },
+      {
+        "variant": "C_covid_energy",
+        "status": "ok",
+        "n_events": 5,
+        "level_rmse_pct": 0.07482845997767167,
+        "level_max_pct": 0.3041918275968447,
+        "mom_rmse_pp": 0.07508407278293115,
+        "mom_max_pp": 0.4124342597862096
+      },
+      {
+        "variant": "D_covid_energy_25",
+        "status": "ok",
+        "n_events": 7,
+        "level_rmse_pct": 0.07521624938884598,
+        "level_max_pct": 0.30757366564417854,
+        "mom_rmse_pp": 0.07505907466643019,
+        "mom_max_pp": 0.41312399149155965
+      }
+    ],
+    "CUUR0000SA0L1E": [
+      {
+        "variant": "A_baseline",
+        "status": "ok",
+        "n_events": 0,
+        "level_rmse_pct": 0.039901339212624926,
+        "level_max_pct": 0.2014839437461058,
+        "mom_rmse_pp": 0.0483179043226394,
+        "mom_max_pp": 0.3276477742325312
+      },
+      {
+        "variant": "B_covid",
+        "status": "ok",
+        "n_events": 3,
+        "level_rmse_pct": 0.04257054798323468,
+        "level_max_pct": 0.19556793539317052,
+        "mom_rmse_pp": 0.050274474644824645,
+        "mom_max_pp": 0.3205987739597127
+      },
+      {
+        "variant": "C_covid_energy",
+        "status": "ok",
+        "n_events": 5,
+        "level_rmse_pct": 0.03698064876317808,
+        "level_max_pct": 0.2203742872752601,
+        "mom_rmse_pp": 0.0449733154465026,
+        "mom_max_pp": 0.35057805630476224
+      },
+      {
+        "variant": "D_covid_energy_25",
+        "status": "ok",
+        "n_events": 7,
+        "level_rmse_pct": 0.03930795761638121,
+        "level_max_pct": 0.18925442438053608,
+        "mom_rmse_pp": 0.04728839293107694,
+        "mom_max_pp": 0.36407924217272125
+      }
+    ]
+  }
+}

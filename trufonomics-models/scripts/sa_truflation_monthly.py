@@ -98,10 +98,36 @@ def daily_to_monthly(daily: pd.Series) -> pd.Series:
 
 
 def load_truflation_weights() -> dict[int, float]:
+    """Truflation's own headline weights (`relative_importance`)."""
+    return _load_weights_column("relative_importance")
+
+
+def load_bls_weights() -> dict[int, float]:
+    """BLS-CPI-equivalent weights (`bls_relative_importance`) applied to
+    Truflation streams. Composing here gives a Truflation aggregation
+    that is directly comparable in scope to BLS published CPI."""
+    return _load_weights_column("bls_relative_importance")
+
+
+def load_pce_weights() -> dict[int, float]:
+    """BEA-PCE-equivalent weights (`pce_relative_importance`) applied to
+    Truflation streams. Composing here gives a Truflation aggregation
+    that is directly comparable in scope to BEA published PCE."""
+    return _load_weights_column("pce_relative_importance")
+
+
+def _load_weights_column(col: str) -> dict[int, float]:
     wt = pd.read_csv(WEIGHTS_CSV)
     top = wt[(wt["subcategory_id"] == 0) & (wt["source_id"] == 0)].copy()
     top["category_id"] = top["category_id"].astype(int)
-    return dict(zip(top["category_id"], top["relative_importance"].astype(float)))
+    return dict(zip(top["category_id"], top[col].astype(float)))
+
+
+WEIGHT_SCHEMES = {
+    "truflation_us_cpi": ("relative_importance",     load_truflation_weights),
+    "truflation_bls_cpi": ("bls_relative_importance", load_bls_weights),
+    "truflation_bea_pce": ("pce_relative_importance", load_pce_weights),
+}
 
 
 def run_x13(monthly: pd.Series, x13_path: str) -> dict:
@@ -217,15 +243,35 @@ def analyze_series(name: str, monthly: pd.Series,
             f"({sd_reduction_pct:+.1f}% vs NSA)")
     print(f"  Mean |SA − NSA| / NSA × 100: {abs_pct_gap:.3f}%")
 
+    # Per-month seasonal factor: multiplicative form, factor = NSA / SA.
+    # Reading: factor > 1 ⇒ that month's NSA reading is "high" relative
+    # to the deseasonalized trend; factor < 1 ⇒ "low".
+    seasonal_factor = monthly / sa
+    seasonal_pct = (seasonal_factor - 1.0) * 100
+
     # Persist per-series CSV
     out_df = pd.DataFrame({
-        "nsa":   monthly,
-        "sa":    sa,
-        "trend": res["trend"],
+        "nsa":              monthly,
+        "sa":               sa,
+        "trend":            res["trend"],
+        "seasonal_factor":  seasonal_factor,
+        "seasonal_pct":     seasonal_pct,
     })
     out_df["sa_minus_nsa_pct"] = (out_df["sa"] / out_df["nsa"] - 1.0) * 100
     csv_path = OUT_DIR / f"sa_truflation_{name}.csv"
     out_df.to_csv(csv_path)
+
+    # Typical seasonal pattern by calendar month (averaged across years).
+    # Gives a 12-row summary of how the series behaves seasonally.
+    by_month = (out_df.dropna(subset=["seasonal_pct"])
+                       .assign(cal_month=lambda d: d.index.month)
+                       .groupby("cal_month")["seasonal_pct"]
+                       .agg(["mean", "std", "count"])
+                       .round(4))
+    by_month.index = pd.Index([pd.Timestamp(2026, m, 1).strftime("%b")
+                                  for m in by_month.index], name="month")
+    pattern_path = OUT_DIR / f"sa_truflation_pattern_{name}.csv"
+    by_month.to_csv(pattern_path)
 
     return {
         "name":                  name,
@@ -241,6 +287,9 @@ def analyze_series(name: str, monthly: pd.Series,
         "sd_reduction_pct":      float(sd_reduction_pct),
         "mean_abs_sa_nsa_gap_pct": abs_pct_gap,
         "csv_path":              str(csv_path.relative_to(ROOT)),
+        "pattern_path":          str(pattern_path.relative_to(ROOT)),
+        "monthly_pattern_pct":   {idx: float(row["mean"])
+                                       for idx, row in by_month.iterrows()},
     }
 
 
@@ -310,18 +359,31 @@ def main() -> None:
     for name, monthly in monthly_per_cat.items():
         per_cat_results.append(analyze_series(name, monthly, x13_path))
 
-    # Composed headline (12-category Laspeyres proxy)
+    # Composed headlines under three weight schemes
+    # (Truflation own / BLS-CPI-equivalent / BEA-PCE-equivalent)
     print("\n" + "=" * 78)
-    print("COMPOSED TRUFLATION HEADLINE (12-category Laspeyres proxy)")
+    print("COMPOSED TRUFLATION HEADLINES — three weight schemes")
     print("=" * 78)
-    headline = compose_headline(monthly_per_cat, weights)
-    if not headline.empty:
-        print(f"\nHeadline composed from {len([r for r in per_cat_results if r.get('status') == 'ok'])} "
-                f"categories ({headline.index.min().date()} → "
-                f"{headline.index.max().date()})")
-        headline_result = analyze_series("composed_headline", headline, x13_path)
-    else:
-        headline_result = {"name": "composed_headline", "status": "empty"}
+    headline_results: list[dict] = []
+    for scheme_name, (weight_col, loader) in WEIGHT_SCHEMES.items():
+        print(f"\n──  {scheme_name}  (weights: {weight_col})  ──")
+        scheme_weights = loader()
+        scheme_total = sum(scheme_weights[cid]
+                                for name, cid in TRUFLATION_CATEGORIES.items()
+                                if cid in scheme_weights)
+        print(f"  weights sum (12 top-level): {scheme_total:.3f}")
+        composed = compose_headline(monthly_per_cat, scheme_weights)
+        if composed.empty:
+            print(f"  [skip] composed headline empty")
+            headline_results.append({"name": f"{scheme_name}_composed",
+                                            "status": "empty"})
+            continue
+        print(f"  composed from {len(monthly_per_cat)} categories "
+                f"({composed.index.min().date()} → "
+                f"{composed.index.max().date()})")
+        headline_results.append(
+            analyze_series(f"{scheme_name}_composed", composed, x13_path))
+    headline_result = headline_results[0]    # truflation_us_cpi_composed
 
     # Official published Truflation headline (from truf_network_published)
     print("\n" + "=" * 78)
@@ -343,7 +405,7 @@ def main() -> None:
     print("\n" + "=" * 78)
     print("SUMMARY — seasonality detected by series")
     print("=" * 78)
-    ok_results = [r for r in per_cat_results + [headline_result] + official_results
+    ok_results = [r for r in per_cat_results + headline_results + official_results
                       if r.get("status") == "ok"]
     print(f"\n{'series':<40s}  {'season?':>8s}  "
             f"{'M7':>6s}  {'NSA SD':>8s}  {'SA SD':>8s}  {'Δ%':>7s}")
