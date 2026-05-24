@@ -1,0 +1,189 @@
+{
+  "as_of_date": "2026-05-24",
+  "verticals": [
+    {
+      "label": "paris_auto_importer",
+      "horizons": {
+        "h=1": [
+          {
+            "method": "bvar",
+            "n": 135,
+            "crps_log": 0.00407,
+            "cov80": 0.82963,
+            "cov95": 0.97037,
+            "width80_log": 0.01956,
+            "crps_vs_naive_ar1_red_pct": -12.71063
+          },
+          {
+            "method": "naive_ar1",
+            "n": 135,
+            "crps_log": 0.00361,
+            "cov80": 0.82222,
+            "cov95": 0.94815,
+            "width80_log": 0.01632,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 135,
+            "crps_log": 0.004,
+            "cov80": 0.77778,
+            "cov95": 0.94074,
+            "width80_log": 0.01731,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=3": [
+          {
+            "method": "bvar",
+            "n": 133,
+            "crps_log": 0.00877,
+            "cov80": 0.71429,
+            "cov95": 0.93233,
+            "width80_log": 0.03522,
+            "crps_vs_naive_ar1_red_pct": -8.92131
+          },
+          {
+            "method": "naive_ar1",
+            "n": 133,
+            "crps_log": 0.00806,
+            "cov80": 0.80451,
+            "cov95": 0.93985,
+            "width80_log": 0.03561,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 133,
+            "crps_log": 0.00888,
+            "cov80": 0.67669,
+            "cov95": 0.86466,
+            "width80_log": 0.03076,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=6": [
+          {
+            "method": "bvar",
+            "n": 130,
+            "crps_log": 0.01458,
+            "cov80": 0.66923,
+            "cov95": 0.83077,
+            "width80_log": 0.0501,
+            "crps_vs_naive_ar1_red_pct": -5.92069
+          },
+          {
+            "method": "naive_ar1",
+            "n": 130,
+            "crps_log": 0.01377,
+            "cov80": 0.71538,
+            "cov95": 0.90769,
+            "width80_log": 0.05451,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 130,
+            "crps_log": 0.01459,
+            "cov80": 0.63077,
+            "cov95": 0.82308,
+            "width80_log": 0.04408,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ]
+      }
+    },
+    {
+      "label": "us_textile_importer",
+      "horizons": {
+        "h=1": [
+          {
+            "method": "bvar",
+            "n": 135,
+            "crps_log": 0.00607,
+            "cov80": 0.74074,
+            "cov95": 0.88889,
+            "width80_log": 0.02265,
+            "crps_vs_naive_ar1_red_pct": -4.91435
+          },
+          {
+            "method": "naive_ar1",
+            "n": 135,
+            "crps_log": 0.00579,
+            "cov80": 0.65926,
+            "cov95": 0.86667,
+            "width80_log": 0.01976,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 135,
+            "crps_log": 0.00608,
+            "cov80": 0.7037,
+            "cov95": 0.88148,
+            "width80_log": 0.02161,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=3": [
+          {
+            "method": "bvar",
+            "n": 133,
+            "crps_log": 0.01174,
+            "cov80": 0.71429,
+            "cov95": 0.8797,
+            "width80_log": 0.04053,
+            "crps_vs_naive_ar1_red_pct": 5.62949
+          },
+          {
+            "method": "naive_ar1",
+            "n": 133,
+            "crps_log": 0.01244,
+            "cov80": 0.69173,
+            "cov95": 0.91729,
+            "width80_log": 0.04566,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 133,
+            "crps_log": 0.01176,
+            "cov80": 0.68421,
+            "cov95": 0.82707,
+            "width80_log": 0.0368,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=6": [
+          {
+            "method": "bvar",
+            "n": 130,
+            "crps_log": 0.01498,
+            "cov80": 0.75385,
+            "cov95": 0.9,
+            "width80_log": 0.05692,
+            "crps_vs_naive_ar1_red_pct": 0.0724
+          },
+          {
+            "method": "naive_ar1",
+            "n": 130,
+            "crps_log": 0.01499,
+            "cov80": 0.84615,
+            "cov95": 0.93846,
+            "width80_log": 0.07223,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "method": "naive_rw",
+            "n": 130,
+            "crps_log": 0.01492,
+            "cov80": 0.73077,
+            "cov95": 0.85385,
+            "width80_log": 0.0519,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ]
+      }
+    }
+  ]
+}

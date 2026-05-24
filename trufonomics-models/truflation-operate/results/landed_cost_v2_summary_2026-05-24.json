@@ -1,0 +1,837 @@
+{
+  "as_of_date": "2026-05-24",
+  "verticals": [
+    {
+      "label": "paris_auto_importer",
+      "horizons": {
+        "h=1": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 135,
+            "crps": 0.00451,
+            "cov80": 0.82963,
+            "width80": 0.02183,
+            "crps_vs_naive_ar1_red_pct": -25.06607
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 135,
+            "crps": 0.00361,
+            "cov80": 0.82222,
+            "width80": 0.01632,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 135,
+            "crps": 0.004,
+            "cov80": 0.77778,
+            "width80": 0.01731,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 59,
+            "crps": 0.00389,
+            "cov80": 0.88136,
+            "width80": 0.0237,
+            "crps_vs_naive_ar1_red_pct": -32.32073
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 59,
+            "crps": 0.00294,
+            "cov80": 0.89831,
+            "width80": 0.01669,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 59,
+            "crps": 0.00309,
+            "cov80": 0.89831,
+            "width80": 0.01774,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.00456,
+            "cov80": 0.91667,
+            "width80": 0.02064,
+            "crps_vs_naive_ar1_red_pct": -9.67728
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.00416,
+            "cov80": 0.75,
+            "width80": 0.01526,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.00554,
+            "cov80": 0.58333,
+            "width80": 0.0163,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.00523,
+            "cov80": 0.70833,
+            "width80": 0.02001,
+            "crps_vs_naive_ar1_red_pct": -27.14553
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.00411,
+            "cov80": 0.75,
+            "width80": 0.01603,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.0042,
+            "cov80": 0.66667,
+            "width80": 0.01688,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.00518,
+            "cov80": 0.75,
+            "width80": 0.02048,
+            "crps_vs_naive_ar1_red_pct": -25.70454
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.00412,
+            "cov80": 0.78571,
+            "width80": 0.01669,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.00442,
+            "cov80": 0.78571,
+            "width80": 0.01764,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=3": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 133,
+            "crps": 0.01334,
+            "cov80": 0.93985,
+            "width80": 0.08441,
+            "crps_vs_naive_ar1_red_pct": -65.64143
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 133,
+            "crps": 0.00806,
+            "cov80": 0.80451,
+            "width80": 0.03561,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 133,
+            "crps": 0.00888,
+            "cov80": 0.67669,
+            "width80": 0.03076,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 57,
+            "crps": 0.01272,
+            "cov80": 0.96491,
+            "width80": 0.09093,
+            "crps_vs_naive_ar1_red_pct": -102.30193
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 57,
+            "crps": 0.00629,
+            "cov80": 0.91228,
+            "width80": 0.03594,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 57,
+            "crps": 0.00643,
+            "cov80": 0.84211,
+            "width80": 0.03129,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.01367,
+            "cov80": 0.91667,
+            "width80": 0.07969,
+            "crps_vs_naive_ar1_red_pct": -8.40122
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.01261,
+            "cov80": 0.45833,
+            "width80": 0.03366,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.01577,
+            "cov80": 0.20833,
+            "width80": 0.02931,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.01381,
+            "cov80": 0.875,
+            "width80": 0.07905,
+            "crps_vs_naive_ar1_red_pct": -82.5517
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.00756,
+            "cov80": 0.875,
+            "width80": 0.03604,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.00814,
+            "cov80": 0.70833,
+            "width80": 0.03035,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.01393,
+            "cov80": 0.96429,
+            "width80": 0.07977,
+            "crps_vs_naive_ar1_red_pct": -70.52761
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.00817,
+            "cov80": 0.82143,
+            "width80": 0.03621,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.0086,
+            "cov80": 0.71429,
+            "width80": 0.03129,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=6": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 130,
+            "crps": 0.02838,
+            "cov80": 0.98462,
+            "width80": 0.21668,
+            "crps_vs_naive_ar1_red_pct": -106.10499
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 130,
+            "crps": 0.01377,
+            "cov80": 0.71538,
+            "width80": 0.05451,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 130,
+            "crps": 0.01459,
+            "cov80": 0.63077,
+            "width80": 0.04408,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 54,
+            "crps": 0.02839,
+            "cov80": 0.98148,
+            "width80": 0.23183,
+            "crps_vs_naive_ar1_red_pct": -186.92613
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 54,
+            "crps": 0.00989,
+            "cov80": 0.85185,
+            "width80": 0.05507,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 54,
+            "crps": 0.00983,
+            "cov80": 0.75926,
+            "width80": 0.0452,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.02796,
+            "cov80": 0.95833,
+            "width80": 0.20544,
+            "crps_vs_naive_ar1_red_pct": -16.03767
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.0241,
+            "cov80": 0.29167,
+            "width80": 0.05158,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.02747,
+            "cov80": 0.29167,
+            "width80": 0.04173,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.02967,
+            "cov80": 1.0,
+            "width80": 0.20614,
+            "crps_vs_naive_ar1_red_pct": -122.41203
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.01334,
+            "cov80": 0.75,
+            "width80": 0.05484,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.01406,
+            "cov80": 0.66667,
+            "width80": 0.04334,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.02761,
+            "cov80": 1.0,
+            "width80": 0.20612,
+            "crps_vs_naive_ar1_red_pct": -116.41172
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.01276,
+            "cov80": 0.78571,
+            "width80": 0.05568,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.0132,
+            "cov80": 0.64286,
+            "width80": 0.04456,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ]
+      }
+    },
+    {
+      "label": "us_textile_importer",
+      "horizons": {
+        "h=1": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 135,
+            "crps": 0.00709,
+            "cov80": 0.71111,
+            "width80": 0.02486,
+            "crps_vs_naive_ar1_red_pct": -22.37208
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 135,
+            "crps": 0.00579,
+            "cov80": 0.65926,
+            "width80": 0.01976,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 135,
+            "crps": 0.00608,
+            "cov80": 0.7037,
+            "width80": 0.02161,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 59,
+            "crps": 0.00517,
+            "cov80": 0.83051,
+            "width80": 0.02381,
+            "crps_vs_naive_ar1_red_pct": -19.16096
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 59,
+            "crps": 0.00434,
+            "cov80": 0.77966,
+            "width80": 0.01888,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 59,
+            "crps": 0.00449,
+            "cov80": 0.79661,
+            "width80": 0.02077,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.0057,
+            "cov80": 0.79167,
+            "width80": 0.02408,
+            "crps_vs_naive_ar1_red_pct": -14.42474
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.00499,
+            "cov80": 0.70833,
+            "width80": 0.01982,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.00577,
+            "cov80": 0.83333,
+            "width80": 0.02184,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.01021,
+            "cov80": 0.45833,
+            "width80": 0.02536,
+            "crps_vs_naive_ar1_red_pct": -19.2536
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.00856,
+            "cov80": 0.375,
+            "width80": 0.02053,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.00874,
+            "cov80": 0.45833,
+            "width80": 0.02212,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.00963,
+            "cov80": 0.60714,
+            "width80": 0.0273,
+            "crps_vs_naive_ar1_red_pct": -34.39879
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.00717,
+            "cov80": 0.60714,
+            "width80": 0.0209,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.00741,
+            "cov80": 0.60714,
+            "width80": 0.02277,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=3": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 133,
+            "crps": 0.02185,
+            "cov80": 0.75188,
+            "width80": 0.09464,
+            "crps_vs_naive_ar1_red_pct": -75.69877
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 133,
+            "crps": 0.01244,
+            "cov80": 0.69173,
+            "width80": 0.04566,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 133,
+            "crps": 0.01176,
+            "cov80": 0.68421,
+            "width80": 0.0368,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 57,
+            "crps": 0.01837,
+            "cov80": 0.80702,
+            "width80": 0.09009,
+            "crps_vs_naive_ar1_red_pct": -78.66275
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 57,
+            "crps": 0.01028,
+            "cov80": 0.73684,
+            "width80": 0.04447,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 57,
+            "crps": 0.00893,
+            "cov80": 0.75439,
+            "width80": 0.0353,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.01978,
+            "cov80": 0.75,
+            "width80": 0.09112,
+            "crps_vs_naive_ar1_red_pct": -46.01666
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.01355,
+            "cov80": 0.625,
+            "width80": 0.04667,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.01471,
+            "cov80": 0.54167,
+            "width80": 0.03684,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.02778,
+            "cov80": 0.58333,
+            "width80": 0.09649,
+            "crps_vs_naive_ar1_red_pct": -72.73049
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.01608,
+            "cov80": 0.58333,
+            "width80": 0.04609,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.01543,
+            "cov80": 0.58333,
+            "width80": 0.03791,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.02562,
+            "cov80": 0.78571,
+            "width80": 0.10533,
+            "crps_vs_naive_ar1_red_pct": -101.09667
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.01274,
+            "cov80": 0.75,
+            "width80": 0.04683,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.01188,
+            "cov80": 0.75,
+            "width80": 0.03889,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ],
+        "h=6": [
+          {
+            "regime": "all",
+            "method": "bvar_returns",
+            "n": 130,
+            "crps": 0.03782,
+            "cov80": 0.94615,
+            "width80": 0.23868,
+            "crps_vs_naive_ar1_red_pct": -152.20627
+          },
+          {
+            "regime": "all",
+            "method": "naive_ar1_returns",
+            "n": 130,
+            "crps": 0.01499,
+            "cov80": 0.84615,
+            "width80": 0.07223,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "all",
+            "method": "naive_rw_returns",
+            "n": 130,
+            "crps": 0.01492,
+            "cov80": 0.73077,
+            "width80": 0.0519,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "bvar_returns",
+            "n": 54,
+            "crps": 0.03289,
+            "cov80": 0.96296,
+            "width80": 0.22981,
+            "crps_vs_naive_ar1_red_pct": -212.84362
+          },
+          {
+            "regime": "stable",
+            "method": "naive_ar1_returns",
+            "n": 54,
+            "crps": 0.01051,
+            "cov80": 0.96296,
+            "width80": 0.07039,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "stable",
+            "method": "naive_rw_returns",
+            "n": 54,
+            "crps": 0.00898,
+            "cov80": 0.90741,
+            "width80": 0.04993,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.03827,
+            "cov80": 0.91667,
+            "width80": 0.22851,
+            "crps_vs_naive_ar1_red_pct": -83.60378
+          },
+          {
+            "regime": "covid",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.02084,
+            "cov80": 0.66667,
+            "width80": 0.07238,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "covid",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.02304,
+            "cov80": 0.33333,
+            "width80": 0.05195,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "bvar_returns",
+            "n": 24,
+            "crps": 0.04415,
+            "cov80": 0.91667,
+            "width80": 0.2424,
+            "crps_vs_naive_ar1_red_pct": -99.23282
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_ar1_returns",
+            "n": 24,
+            "crps": 0.02216,
+            "cov80": 0.66667,
+            "width80": 0.07396,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "ukraine_post",
+            "method": "naive_rw_returns",
+            "n": 24,
+            "crps": 0.02452,
+            "cov80": 0.58333,
+            "width80": 0.053,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "bvar_returns",
+            "n": 28,
+            "crps": 0.0415,
+            "cov80": 0.96429,
+            "width80": 0.26134,
+            "crps_vs_naive_ar1_red_pct": -232.52803
+          },
+          {
+            "regime": "recent",
+            "method": "naive_ar1_returns",
+            "n": 28,
+            "crps": 0.01248,
+            "cov80": 0.92857,
+            "width80": 0.07415,
+            "crps_vs_naive_ar1_red_pct": NaN
+          },
+          {
+            "regime": "recent",
+            "method": "naive_rw_returns",
+            "n": 28,
+            "crps": 0.0112,
+            "cov80": 0.85714,
+            "width80": 0.05472,
+            "crps_vs_naive_ar1_red_pct": NaN
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+regime,method,n,crps,cov80,width80,crps_vs_naive_ar1_red_pct
+all,bvar_returns,133,0.01334,0.93985,0.08441,-65.64143
+all,naive_ar1_returns,133,0.00806,0.80451,0.03561,
+all,naive_rw_returns,133,0.00888,0.67669,0.03076,
+stable,bvar_returns,57,0.01272,0.96491,0.09093,-102.30193
+stable,naive_ar1_returns,57,0.00629,0.91228,0.03594,
+stable,naive_rw_returns,57,0.00643,0.84211,0.03129,
+covid,bvar_returns,24,0.01367,0.91667,0.07969,-8.40122
+covid,naive_ar1_returns,24,0.01261,0.45833,0.03366,
+covid,naive_rw_returns,24,0.01577,0.20833,0.02931,
+ukraine_post,bvar_returns,24,0.01381,0.875,0.07905,-82.5517
+ukraine_post,naive_ar1_returns,24,0.00756,0.875,0.03604,
+ukraine_post,naive_rw_returns,24,0.00814,0.70833,0.03035,
+recent,bvar_returns,28,0.01393,0.96429,0.07977,-70.52761
+recent,naive_ar1_returns,28,0.00817,0.82143,0.03621,
+recent,naive_rw_returns,28,0.0086,0.71429,0.03129,
