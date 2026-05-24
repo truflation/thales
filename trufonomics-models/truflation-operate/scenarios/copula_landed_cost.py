@@ -62,10 +62,55 @@ class CopulaFit:
     ar1_alphas: np.ndarray           # (k,)
     ar1_phis: np.ndarray             # (k,)
     residuals: np.ndarray            # (T, k) — empirical residual matrix
-    corr_matrix: np.ndarray          # (k, k) — Gaussian copula correlation
+    corr_matrix: np.ndarray          # (k, k) — Gaussian/t copula correlation
+    family: str = "gaussian"         # "gaussian" or "t"
+    t_df: float | None = None        # degrees of freedom for t-copula
 
 
-def fit_copula_ar1(Y_level: np.ndarray) -> CopulaFit:
+def fit_t_copula_df(z: np.ndarray) -> float:
+    """Fit Student-t copula degrees of freedom via profile MLE.
+
+    Given pre-uniformised, normal-quantile-mapped residuals z (n × k),
+    the t-copula log-likelihood as a function of df ν is maximised on
+    a coarse grid. df < 30 indicates heavy tails (more co-movement in
+    extremes); df > 30 ≈ Gaussian.
+    """
+    n, k = z.shape
+    # Cap df at 50 (effectively Gaussian) and floor at 3 (heavy tails)
+    grid = [3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 30, 40, 50]
+    R = np.corrcoef(z, rowvar=False)
+    # Numerical PD guard
+    eigvals, eigvecs = np.linalg.eigh(R)
+    eigvals = np.clip(eigvals, 1e-6, None)
+    R = eigvecs @ np.diag(eigvals) @ eigvecs.T
+
+    best_ll, best_df = -np.inf, 30.0
+    R_inv = np.linalg.inv(R)
+    R_det = float(np.linalg.det(R))
+    if R_det <= 0:
+        return 30.0    # fallback
+    log_det_R = float(np.log(R_det))
+    from scipy.special import gammaln
+    for df in grid:
+        # t-copula log-density (per Demarta & McNeil 2005)
+        # log c(u) = log Γ((ν+k)/2) + (k-1)log Γ(ν/2) - k log Γ((ν+1)/2)
+        #          - 0.5 log|R| - ((ν+k)/2) log(1 + (z'R⁻¹z)/ν)
+        #          + ((ν+1)/2) Σ log(1 + z_i²/ν)
+        # Sum over observations
+        zRz = np.einsum("ij,jk,ik->i", z, R_inv, z)
+        log_c = (gammaln((df + k) / 2)
+                    + (k - 1) * gammaln(df / 2)
+                    - k * gammaln((df + 1) / 2)
+                    - 0.5 * log_det_R
+                    - ((df + k) / 2) * np.log(1 + zRz / df)
+                    + ((df + 1) / 2) * np.log(1 + z ** 2 / df).sum(axis=1))
+        ll = float(log_c.sum())
+        if ll > best_ll:
+            best_ll, best_df = ll, df
+    return float(best_df)
+
+
+def fit_copula_ar1(Y_level: np.ndarray, family: str = "gaussian") -> CopulaFit:
     """Fit per-input AR(1) on log-returns and Gaussian copula on
     standardised residuals."""
     R = np.diff(Y_level, axis=0)
@@ -96,10 +141,14 @@ def fit_copula_ar1(Y_level: np.ndarray) -> CopulaFit:
     eigvals, eigvecs = np.linalg.eigh(corr)
     eigvals = np.clip(eigvals, 1e-6, None)
     corr = eigvecs @ np.diag(eigvals) @ eigvecs.T
+    t_df = None
+    if family == "t":
+        t_df = fit_t_copula_df(z)
     return CopulaFit(
         var_names=[f"y{i}" for i in range(k)],
         ar1_alphas=alphas, ar1_phis=phis,
-        residuals=resid, corr_matrix=corr)
+        residuals=resid, corr_matrix=corr,
+        family=family, t_df=t_df)
 
 
 def sample_copula_paths(fit: CopulaFit, Y_level: np.ndarray, h: int,
@@ -122,9 +171,18 @@ def sample_copula_paths(fit: CopulaFit, Y_level: np.ndarray, h: int,
     n_resid = fit.residuals.shape[0]
 
     for s in range(n_samples):
-        # Draw h joint z-vectors with the copula correlation
-        z = rng.standard_normal((h, k)) @ L.T
-        u = stats.norm.cdf(z)    # uniforms with copula structure
+        # Draw h joint z-vectors with the copula correlation. For
+        # t-copula scale each draw by sqrt(df / chi²(df)) so the joint
+        # has Student-t heavy tails with the requested df.
+        z_normal = rng.standard_normal((h, k)) @ L.T
+        if fit.family == "t" and fit.t_df is not None:
+            # Per-row chi² gives proper t-multivariate
+            chi2 = rng.chisquare(fit.t_df, size=h) / fit.t_df
+            z = z_normal / np.sqrt(chi2[:, None])
+            u = stats.t.cdf(z, df=fit.t_df)
+        else:
+            z = z_normal
+            u = stats.norm.cdf(z)    # uniforms with Gaussian copula structure
         # Invert through empirical residual CDF per input
         eps_path = np.zeros((h, k))
         for j in range(k):
