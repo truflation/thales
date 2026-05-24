@@ -1,0 +1,6 @@
+target,n,bvar_rmse,naive_rmse,red_pct
+log_fx_cnyusd,68,0.01169,0.01089,-7.35509
+log_freight,67,0.02303,0.02201,-4.6461
+log_diesel,76,0.06893,0.0611,-12.82964
+log_truf_clothing,72,0.01621,0.01621,-0.03462
+log_truf_transport,77,0.01433,0.01274,-12.49753
