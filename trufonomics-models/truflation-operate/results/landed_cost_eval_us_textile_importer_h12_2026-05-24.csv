@@ -1,0 +1,5 @@
+method,n,rmse_log,rmse_pct,mae_log,mean_err_bp,bvar_vs_naive_ar1_red_pct,bvar_vs_naive_rw_red_pct
+bvar,124,0.04348,4.47792,0.03249,82.32637,-1.72683,1.24363
+naive_flat,124,0.04402,4.57865,0.03076,177.16393,,
+naive_rw,124,0.04402,4.57865,0.03076,177.16393,,
+naive_ar1,124,0.04274,4.39418,0.03216,87.34542,,
