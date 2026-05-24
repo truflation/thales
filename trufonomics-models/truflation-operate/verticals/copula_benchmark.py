@@ -37,6 +37,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "truflation-operate" / "scenarios"))
 
 import copula_landed_cost as clc    # noqa: E402
+import cost_baskets    # noqa: E402
 
 
 def _load(name: str, path: Path):
@@ -47,21 +48,18 @@ def _load(name: str, path: Path):
     return m
 
 
-CostShare = clc.CostShare
-AUTO_SHARES = [
-    CostShare("log_truf_vehicle",   0.45),
-    CostShare("log_fx_eurusd",      0.30),
-    CostShare("log_freight",        0.12),
-    CostShare("log_diesel",         0.06),
-    CostShare("log_truf_transport", 0.07),
-]
-TEXTILE_SHARES = [
-    CostShare("log_truf_clothing",  0.40),
-    CostShare("log_fx_cnyusd",      0.30),
-    CostShare("log_freight",        0.15),
-    CostShare("log_diesel",         0.08),
-    CostShare("log_truf_transport", 0.07),
-]
+def _make_shares(basket_label: str) -> list[clc.CostShare]:
+    """Build the CostShare list for the copula module from the canonical
+    operator basket registry. Uses exposure weights (the vector that
+    multiplies modelled-variable log-deviations to give landed-cost
+    log-deviations) — which can sum above 1.0 for baskets where the
+    foreign-currency cost line is double-passed (price + FX)."""
+    weights = cost_baskets.get_exposure_weights(basket_label)
+    return [clc.CostShare(var, w) for var, w in weights.items()]
+
+
+AUTO_SHARES = _make_shares("auto")
+TEXTILE_SHARES = _make_shares("textile")
 
 
 def main() -> None:

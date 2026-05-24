@@ -1,0 +1,4 @@
+method,n,crps,cov80,width80,crps_vs_naive_red_pct
+copula_ar1,130,0.01986,0.83846,0.09538,-1.30597
+bvar_returns,130,0.04896,0.91538,0.30212,-149.74362
+naive_ar1_independent,130,0.01961,0.82308,0.0939,

@@ -204,6 +204,142 @@ def sample_copula_paths(fit: CopulaFit, Y_level: np.ndarray, h: int,
     return out
 
 
+def conditional_copula_sample(fit: CopulaFit, Y_level: np.ndarray,
+                                       conditioning: dict[str, float],
+                                       var_names: list[str],
+                                       h: int = 12,
+                                       persistent: bool = True,
+                                       n_samples: int = 500,
+                                       rng: np.random.Generator | None = None,
+                                       ) -> np.ndarray:
+    """Conditional copula propagation — the proper semantic for operator
+    scenarios.
+
+    Operator says "EUR/USD drops 5%, freight contract repriced +20%".
+    Instead of overwriting first-step innovations (which decay via AR(1)
+    after one period), this samples the JOINT distribution conditional
+    on the shocked variables hitting the specified levels — and the
+    other variables follow the conditional copula draw, which correctly
+    propagates the shock via the observed cross-input correlation.
+
+    Args:
+      conditioning: dict mapping var_name → log-deviation level the
+        operator wants to impose (e.g. {"log_fx_eurusd": -0.05}).
+      var_names: ordered variable names matching panel columns.
+      persistent: if True, the conditioned variables are held at the
+        specified log-deviation for ALL h steps (locked path — right
+        for tariff repegs, freight contract changes, structural FX
+        shifts). If False, only step 0 is conditioned; subsequent
+        steps are unconditioned (decaying shock).
+      n_samples, rng, h: standard.
+
+    Returns:
+      (n_samples, h, k) array of log-level deviations from Y_level[-1].
+    """
+    if rng is None:
+        rng = np.random.default_rng()
+
+    k = len(var_names)
+    cond_idx = [var_names.index(v) for v in conditioning if v in var_names]
+    free_idx = [i for i in range(k) if i not in cond_idx]
+    cond_sizes = np.array([conditioning[var_names[i]] for i in cond_idx])
+
+    # Map cond log-deviations to copula z-space:
+    # z = Φ⁻¹(F_i(eps_i))
+    # where eps_i = cond_size (we treat the shock as living in the
+    # innovation space). For persistent shocks the shock acts on the
+    # cumulative level rather than the innovation — we approximate by
+    # using the AR(1) inversion: eps_step ≈ cum_dev × (1 - phi) when
+    # the operator wants a locked level.
+    cond_z = np.zeros(len(cond_idx))
+    for k_idx, idx in enumerate(cond_idx):
+        # Empirical CDF: find rank of cond_size in residual distribution
+        resid_j = np.sort(fit.residuals[:, idx])
+        # For persistent shock the "implied innovation" at step 0 is
+        # large; we use the size directly as the conditioning residual.
+        target_eps = cond_sizes[k_idx]
+        u_i = np.searchsorted(resid_j, target_eps) / max(len(resid_j) - 1, 1)
+        u_i = np.clip(u_i, 1e-6, 1 - 1e-6)
+        cond_z[k_idx] = stats.norm.ppf(u_i)
+
+    # Partition the copula correlation matrix
+    R = fit.corr_matrix
+    if len(cond_idx) == 0:
+        # No conditioning — fall through to unconditional sampler
+        return sample_copula_paths(fit, Y_level, h, n_samples, rng)
+    if len(free_idx) == 0:
+        # Everything conditioned — deterministic
+        free_idx = []
+
+    R_AA = R[np.ix_(cond_idx, cond_idx)]
+    R_BB = R[np.ix_(free_idx, free_idx)]
+    R_BA = R[np.ix_(free_idx, cond_idx)]
+    R_AA_inv = np.linalg.inv(R_AA + 1e-9 * np.eye(len(cond_idx)))
+
+    cond_mean_B = R_BA @ R_AA_inv @ cond_z          # mean of free | cond
+    cond_cov_B = R_BB - R_BA @ R_AA_inv @ R_BA.T    # cov of free | cond
+    # PD guard
+    eigvals, eigvecs = np.linalg.eigh(cond_cov_B)
+    eigvals = np.clip(eigvals, 1e-6, None)
+    cond_cov_B = eigvecs @ np.diag(eigvals) @ eigvecs.T
+    L_B = np.linalg.cholesky(cond_cov_B + 1e-9 * np.eye(len(free_idx)))
+
+    R_data = np.diff(Y_level, axis=0)
+    last_r = R_data[-1].copy()
+
+    out = np.zeros((n_samples, h, k))
+    for s in range(n_samples):
+        for step in range(h):
+            # At step 0 (or every step if persistent), inject the
+            # conditional shock + sample the free vars from the
+            # conditional copula.
+            if step == 0 or persistent:
+                # Sample free variables from the conditional Gaussian
+                # copula: z_B ~ N(cond_mean_B, cond_cov_B)
+                z_B = cond_mean_B + L_B @ rng.standard_normal(len(free_idx))
+                u_B = stats.norm.cdf(z_B)
+                # Invert through empirical residual CDFs for free vars
+                eps_step = np.zeros(k)
+                for k_idx, idx in enumerate(cond_idx):
+                    eps_step[idx] = cond_sizes[k_idx]
+                for k_idx, idx in enumerate(free_idx):
+                    sorted_r = np.sort(fit.residuals[:, idx])
+                    n_resid = len(sorted_r)
+                    pos = u_B[k_idx] * (n_resid - 1)
+                    lo = int(np.floor(pos))
+                    hi = min(lo + 1, n_resid - 1)
+                    frac = pos - lo
+                    eps_step[idx] = sorted_r[lo] * (1 - frac) + sorted_r[hi] * frac
+            else:
+                # Step > 0 and not persistent — unconditional copula draw
+                z_uncond = rng.standard_normal(k) @ np.linalg.cholesky(R).T
+                u_uncond = stats.norm.cdf(z_uncond)
+                eps_step = np.zeros(k)
+                for j in range(k):
+                    sorted_r = np.sort(fit.residuals[:, j])
+                    n_resid = len(sorted_r)
+                    pos = u_uncond[j] * (n_resid - 1)
+                    lo = int(np.floor(pos))
+                    hi = min(lo + 1, n_resid - 1)
+                    frac = pos - lo
+                    eps_step[j] = sorted_r[lo] * (1 - frac) + sorted_r[hi] * frac
+
+            # AR(1) projection per variable. If persistent and this var
+            # is conditioned, lock the cumulative to the requested level.
+            for j in range(k):
+                prev_r = last_r[j] if step == 0 else (
+                    out[s, step - 1, j] - (out[s, step - 2, j] if step > 1 else 0))
+                r_next = fit.ar1_alphas[j] + fit.ar1_phis[j] * prev_r + eps_step[j]
+                cum_prev = 0.0 if step == 0 else out[s, step - 1, j]
+                out[s, step, j] = cum_prev + r_next
+
+            # If persistent, override the cumulative for conditioned vars
+            if persistent:
+                for k_idx, idx in enumerate(cond_idx):
+                    out[s, step, idx] = cond_sizes[k_idx]
+    return out
+
+
 def _aggregate(samples: np.ndarray, var_cols: list[str],
                     shares: list[CostShare]) -> np.ndarray:
     weights = np.zeros(len(var_cols))

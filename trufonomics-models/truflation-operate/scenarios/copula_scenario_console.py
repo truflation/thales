@@ -44,6 +44,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "truflation-operate" / "scenarios"))
 
 import copula_landed_cost as clc    # noqa: E402
+import cost_baskets    # noqa: E402
 
 OUT_DIR = ROOT / "truflation-operate" / "results"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -67,14 +68,9 @@ def _load_vertical(label: str):
     raise ValueError(f"unknown vertical {label!r}")
 
 
-COST_SHARES = {
-    "auto": [("log_truf_vehicle", 0.45), ("log_fx_eurusd", 0.30),
-                 ("log_freight", 0.12), ("log_diesel", 0.06),
-                 ("log_truf_transport", 0.07)],
-    "textile": [("log_truf_clothing", 0.40), ("log_fx_cnyusd", 0.30),
-                    ("log_freight", 0.15), ("log_diesel", 0.08),
-                    ("log_truf_transport", 0.07)],
-}
+def _exposure_weights(vertical: str) -> dict[str, float]:
+    """Single source of truth — exposure weights from cost_baskets."""
+    return cost_baskets.get_exposure_weights(vertical)
 
 
 def _parse_shock(s: str) -> tuple[str, float]:
@@ -86,7 +82,10 @@ def _parse_shock(s: str) -> tuple[str, float]:
 
 def scenario_report(vertical: str, shocks: list[tuple[str, float]],
                           h: int = 12, n_samples: int = 1000,
-                          family: str = "gaussian", seed: int = 0) -> dict:
+                          family: str = "gaussian",
+                          persistent: bool = True,
+                          mode: str = "conditional",
+                          seed: int = 0) -> dict:
     """Produce a copula-based scenario report.
 
     The shocks are imposed on the **innovation paths** for each shocked
@@ -107,47 +106,21 @@ def scenario_report(vertical: str, shocks: list[tuple[str, float]],
 
     fit = clc.fit_copula_ar1(Y, family=family)
     rng = np.random.default_rng(seed)
-    # Sample baseline joint paths (no imposed shocks)
+    # Baseline: unconditioned joint copula draws
     samples_baseline = clc.sample_copula_paths(fit, Y, h, n_samples, rng)
-    # Sample with imposed shocks: replace the first-step innovation for
-    # each shocked variable with the requested magnitude. The other
-    # variables' first-step innovations remain copula-correlated. This
-    # is the cleanest way to ask "if FX jumps -5%, what does the joint
-    # outcome look like?" while preserving correlation structure.
-    samples_shocked = clc.sample_copula_paths(fit, Y, h, n_samples, rng)
-    R = np.diff(Y, axis=0)
-    last_r = R[-1].copy()
-    for var_name, size_log in shocks:
-        if var_name not in var_cols:
-            print(f"WARNING: unknown var {var_name!r} — skipping")
-            continue
-        j = var_cols.index(var_name)
-        # Override the first-step contribution from this variable.
-        # Compute baseline first-step contribution: alpha + phi*last_r + eps.
-        # We replace the path's first-step value to deliver `size_log`
-        # at h=1 (in cumulative deviation units).
-        base_first = fit.ar1_alphas[j] + fit.ar1_phis[j] * last_r[j]
-        # Each sample has its own innovation at step 0; we override so
-        # that step-0 cumulative dev = size_log
-        old_step0 = samples_shocked[:, 0, j].copy()
-        samples_shocked[:, 0, j] = size_log
-        # Propagate the change through subsequent steps' AR(1) update:
-        # since the step-1+ values used (state[0] = step0 cumulative),
-        # any change to step-0 cascades. We re-run AR(1) only for the
-        # shocked variable from step 1 onwards using new step-0 as state.
-        for step in range(1, h):
-            # Old step value = AR(1)(prev) + eps_step
-            # New step value with shifted step-0 should = AR(1)(new prev) + eps_step
-            prev_old_cum = samples_shocked[:, step - 1, j] if step > 1 else old_step0
-            prev_new_cum = size_log if step == 1 else samples_shocked[:, step - 1, j]
-            # Innovation = old cum_step - (alpha + phi * old prev cum)
-            # Actually simpler: shift the cumulative trajectory by delta
-            delta = size_log - old_step0
-            # AR(1) propagation: new dev = old dev + delta * phi^(step)
-            samples_shocked[:, step, j] = (samples_shocked[:, step, j]
-                                                    + delta * (fit.ar1_phis[j] ** step))
 
-    weights_map = dict(COST_SHARES[vertical])
+    # Shocked: conditional copula propagation
+    # The proper operator scenario primitive — non-shocked variables
+    # are sampled from the conditional joint given the shocked levels,
+    # preserving the empirical cross-input dependence rather than
+    # ignoring it as in the innovation-override approach.
+    conditioning = {v: x for v, x in shocks if v in var_cols}
+    rng2 = np.random.default_rng(seed + 1)
+    samples_shocked = clc.conditional_copula_sample(
+        fit, Y, conditioning=conditioning, var_names=var_cols,
+        h=h, persistent=persistent, n_samples=n_samples, rng=rng2)
+
+    weights_map = _exposure_weights(vertical)
     weights = np.array([weights_map.get(c, 0.0) for c in var_cols])
     landed_baseline = samples_baseline @ weights
     landed_shocked = samples_shocked @ weights
@@ -237,6 +210,12 @@ def main() -> None:
     parser.add_argument("--horizon", type=int, default=12)
     parser.add_argument("--n-samples", type=int, default=1000)
     parser.add_argument("--family", choices=["gaussian", "t"], default="gaussian")
+    parser.add_argument("--persistent", action="store_true", default=True,
+                        help="Hold shocked vars at level for all h steps "
+                             "(default; right for tariff/contract changes)")
+    parser.add_argument("--decaying", dest="persistent", action="store_false",
+                        help="One-step innovation that decays via AR(1) "
+                             "(right for one-time spikes)")
     parser.add_argument("--save", type=str, default=None)
     args = parser.parse_args()
 
@@ -247,7 +226,8 @@ def main() -> None:
                        else [("log_fx_cnyusd", 0.05), ("log_freight", 0.20)])
 
     rep = scenario_report(args.vertical, shocks, h=args.horizon,
-                                  n_samples=args.n_samples, family=args.family)
+                                  n_samples=args.n_samples, family=args.family,
+                                  persistent=args.persistent)
     _print(rep)
     out = (Path(args.save) if args.save else
               OUT_DIR / f"copula_scenario_{args.vertical}_{date.today()}.json")
