@@ -1,0 +1,6 @@
+,from_log_fx_cnyusd,from_log_freight,from_log_diesel,from_log_truf_clothing,from_log_truf_transport
+log_fx_cnyusd,100.0,0.0,0.0,0.0,0.0
+log_freight,0.01,99.98,0.0,0.0,0.0
+log_diesel,0.09,8.37,91.53,0.0,0.01
+log_truf_clothing,1.71,0.88,5.64,91.76,0.0
+log_truf_transport,0.36,4.49,28.42,1.96,64.77

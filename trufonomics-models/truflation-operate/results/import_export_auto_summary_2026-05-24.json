@@ -1,0 +1,47 @@
+{
+  "client": "paris_auto_importer",
+  "as_of_date": "2026-05-24",
+  "n_obs": 196,
+  "n_vars": 5,
+  "window_start": "2010-01-31",
+  "window_end": "2026-04-30",
+  "max_abs_eig": 1.000367844216945,
+  "stable": false,
+  "walk_forward_rmse": [
+    {
+      "target": "log_fx_eurusd",
+      "n": 135,
+      "bvar_rmse_log": 0.0168372739614095,
+      "naive_rmse_log": 0.016651777594477855,
+      "rmse_red_pct": -1.1139733633793059
+    },
+    {
+      "target": "log_diesel",
+      "n": 135,
+      "bvar_rmse_log": 0.051233794392739174,
+      "naive_rmse_log": 0.050884890195591025,
+      "rmse_red_pct": -0.6856734795084307
+    },
+    {
+      "target": "log_freight",
+      "n": 135,
+      "bvar_rmse_log": 0.028352669571181866,
+      "naive_rmse_log": 0.028411904835931378,
+      "rmse_red_pct": 0.20848748118640348
+    },
+    {
+      "target": "log_truf_vehicle",
+      "n": 135,
+      "bvar_rmse_log": 0.005621888854713204,
+      "naive_rmse_log": 0.005858632691077124,
+      "rmse_red_pct": 4.040940076760369
+    },
+    {
+      "target": "log_truf_transport",
+      "n": 135,
+      "bvar_rmse_log": 0.01221821395734379,
+      "naive_rmse_log": 0.012529940515094925,
+      "rmse_red_pct": 2.487853452900235
+    }
+  ]
+}

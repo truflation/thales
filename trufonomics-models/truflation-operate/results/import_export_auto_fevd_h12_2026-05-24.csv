@@ -1,0 +1,6 @@
+,from_log_fx_eurusd,from_log_diesel,from_log_freight,from_log_truf_vehicle,from_log_truf_transport
+log_fx_eurusd,100.0,0.0,0.0,0.0,0.0
+log_diesel,0.02,99.95,0.01,0.01,0.01
+log_freight,0.41,7.77,91.82,0.0,0.0
+log_truf_vehicle,0.03,0.41,1.92,97.64,0.0
+log_truf_transport,1.19,32.75,0.38,2.2,63.49

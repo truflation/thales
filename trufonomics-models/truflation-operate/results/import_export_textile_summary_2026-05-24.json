@@ -1,0 +1,47 @@
+{
+  "client": "us_textile_importer",
+  "as_of_date": "2026-05-24",
+  "n_obs": 196,
+  "n_vars": 5,
+  "window_start": "2010-01-31",
+  "window_end": "2026-04-30",
+  "max_abs_eig": 1.0001713351009942,
+  "stable": false,
+  "walk_forward_rmse": [
+    {
+      "target": "log_fx_cnyusd",
+      "n": 135,
+      "bvar_rmse_log": 0.011491062783865323,
+      "naive_rmse_log": 0.011394712037871723,
+      "rmse_red_pct": -0.8455742073460559
+    },
+    {
+      "target": "log_freight",
+      "n": 135,
+      "bvar_rmse_log": 0.028319120027666487,
+      "naive_rmse_log": 0.028411904835931378,
+      "rmse_red_pct": 0.3265701782428576
+    },
+    {
+      "target": "log_diesel",
+      "n": 135,
+      "bvar_rmse_log": 0.05109041802648686,
+      "naive_rmse_log": 0.050884890195591025,
+      "rmse_red_pct": -0.4039073880396149
+    },
+    {
+      "target": "log_truf_clothing",
+      "n": 135,
+      "bvar_rmse_log": 0.016614997326837033,
+      "naive_rmse_log": 0.016568651487627945,
+      "rmse_red_pct": -0.2797200438653391
+    },
+    {
+      "target": "log_truf_transport",
+      "n": 135,
+      "bvar_rmse_log": 0.012214999201868373,
+      "naive_rmse_log": 0.012529940515094925,
+      "rmse_red_pct": 2.513510042981759
+    }
+  ]
+}
