@@ -1253,23 +1253,6 @@ def write_token_price_plots(
     plt.close(fig)
     plot_paths["token_price_distribution"] = str(path)
 
-    if not core_index.empty:
-        fig, ax = plt.subplots(figsize=(8.5, 4.8))
-        for token_type in token_order:
-            series = core_index[core_index["token_type"] == token_type].sort_values("snapshot_date")
-            if series.empty:
-                continue
-            ax.plot(series["snapshot_date"], series["index_value"], marker="o", label=token_labels.get(token_type, token_type))
-        ax.set_ylabel("Index value")
-        ax.set_title("Token Price Index History")
-        ax.grid(axis="y", alpha=0.25)
-        ax.legend(frameon=False, ncol=2)
-        fig.tight_layout()
-        path = plot_dir / "token_price_index_history.png"
-        fig.savefig(path, dpi=180)
-        plt.close(fig)
-        plot_paths["token_price_index_history"] = str(path)
-
     if not taxonomy.empty:
         top = taxonomy.groupby("model_company")["canonical_models"].sum().sort_values(ascending=False).head(12)
         fig, ax = plt.subplots(figsize=(8.5, 5.2))

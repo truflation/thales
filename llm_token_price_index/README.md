@@ -22,7 +22,6 @@ The index tracks public list prices for LLM API tokens, normalized to USD per 1 
 
 - [median_token_prices.png](assets/median_token_prices.png)
 - [token_price_distribution.png](assets/token_price_distribution.png)
-- [token_price_index_history.png](assets/token_price_index_history.png)
 - [top_model_companies.png](assets/top_model_companies.png)
 
 ## Rebuild

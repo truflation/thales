@@ -228,7 +228,7 @@ There are currently two live snapshots: `2026-06-04` and `2026-06-05`.
 
 There is no meaningful trend yet. The only movement is a tiny output-token change caused by a catalog/source change, not a broad market price move.
 
-![Token price index history](../assets/token_price_index_history.png)
+The v1 package does not include a headline history chart. Historical backfill is implemented, but the current public historical feed is too sparse for a broad market trend chart. The historical CSVs remain linked below for audit and data-team review.
 
 ## Company and Model Taxonomy
 
@@ -391,5 +391,4 @@ Plot files:
 
 - [median_token_prices.png](../assets/median_token_prices.png)
 - [token_price_distribution.png](../assets/token_price_distribution.png)
-- [token_price_index_history.png](../assets/token_price_index_history.png)
 - [top_model_companies.png](../assets/top_model_companies.png)

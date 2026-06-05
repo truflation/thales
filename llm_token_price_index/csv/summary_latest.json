@@ -40,7 +40,6 @@
     "plots": {
       "median_token_prices": "/Users/kluless/kairos/llm_token_price_index/assets/median_token_prices.png",
       "token_price_distribution": "/Users/kluless/kairos/llm_token_price_index/assets/token_price_distribution.png",
-      "token_price_index_history": "/Users/kluless/kairos/llm_token_price_index/assets/token_price_index_history.png",
       "top_model_companies": "/Users/kluless/kairos/llm_token_price_index/assets/top_model_companies.png"
     },
     "simon_intervals": "/Users/kluless/kairos/llm_token_price_index/csv/simon_historical_intervals.csv",
