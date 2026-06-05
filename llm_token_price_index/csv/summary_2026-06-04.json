@@ -1,0 +1,33 @@
+{
+  "snapshot_date": "2026-06-04",
+  "generated_at": "2026-06-04T09:29:09.917384+00:00",
+  "current_observations": 12831,
+  "history_observations": 12831,
+  "positive_current_observations": 11684,
+  "sources": [
+    "litellm",
+    "openrouter",
+    "portkey",
+    "simon_llm_prices"
+  ],
+  "token_types": [
+    "cache_read",
+    "cache_write",
+    "cache_write_1h",
+    "input",
+    "output",
+    "reasoning"
+  ],
+  "output_files": {
+    "current": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_2026-06-04.csv",
+    "latest": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_latest.csv",
+    "history": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_history.csv",
+    "index": "/Users/kluless/kairos/llm_token_price_index/csv/price_index_2026-06-04.csv",
+    "latest_index": "/Users/kluless/kairos/llm_token_price_index/csv/price_index_latest.csv"
+  },
+  "methodology": {
+    "price_unit": "USD per 1 million tokens",
+    "index": "Geometric mean of source-aware price ratios vs token-type base date.",
+    "zero_prices": "Retained in normalized tables, excluded from index and descriptive stats."
+  }
+}

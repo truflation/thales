@@ -1,0 +1,8 @@
+# Example cron schedules for the token price index.
+# Install manually with `crontab -e` after confirming paths and environment.
+#
+# Daily snapshot at 06:15 UTC:
+# 15 6 * * * /Users/kluless/kairos/llm_token_price_index/scripts/run_snapshot.sh
+#
+# Weekly snapshot every Monday at 06:15 UTC:
+# 15 6 * * 1 /Users/kluless/kairos/llm_token_price_index/scripts/run_snapshot.sh

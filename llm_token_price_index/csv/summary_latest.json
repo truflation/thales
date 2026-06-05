@@ -1,0 +1,57 @@
+{
+  "snapshot_date": "2026-06-05",
+  "generated_at": "2026-06-05T05:23:01.456701+00:00",
+  "current_observations": 12838,
+  "history_observations": 25669,
+  "core_current_observations": 8780,
+  "core_history_observations": 17557,
+  "positive_current_observations": 11687,
+  "headline_universe": "cleaned_core",
+  "sources": [
+    "litellm",
+    "openrouter",
+    "portkey",
+    "simon_llm_prices"
+  ],
+  "token_types": [
+    "cache_read",
+    "cache_write",
+    "cache_write_1h",
+    "input",
+    "output",
+    "reasoning"
+  ],
+  "output_files": {
+    "current": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_2026-06-05.csv",
+    "latest": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_latest.csv",
+    "history": "/Users/kluless/kairos/llm_token_price_index/csv/normalized_prices_history.csv",
+    "core_current": "/Users/kluless/kairos/llm_token_price_index/csv/core_prices_2026-06-05.csv",
+    "core_latest": "/Users/kluless/kairos/llm_token_price_index/csv/core_prices_latest.csv",
+    "core_history": "/Users/kluless/kairos/llm_token_price_index/csv/core_prices_history.csv",
+    "index": "/Users/kluless/kairos/llm_token_price_index/csv/price_index_2026-06-05.csv",
+    "latest_index": "/Users/kluless/kairos/llm_token_price_index/csv/price_index_latest.csv",
+    "all_index": "/Users/kluless/kairos/llm_token_price_index/csv/all_price_index_2026-06-05.csv",
+    "all_latest_index": "/Users/kluless/kairos/llm_token_price_index/csv/all_price_index_latest.csv",
+    "model_taxonomy": "/Users/kluless/kairos/llm_token_price_index/csv/model_taxonomy_2026-06-05.csv",
+    "model_taxonomy_latest": "/Users/kluless/kairos/llm_token_price_index/csv/model_taxonomy_latest.csv",
+    "model_taxonomy_markdown": "/Users/kluless/kairos/llm_token_price_index/csv/model_taxonomy_latest.md",
+    "price_validation": "/Users/kluless/kairos/llm_token_price_index/csv/price_validation_2026-06-05.csv",
+    "price_validation_latest": "/Users/kluless/kairos/llm_token_price_index/csv/price_validation_latest.csv",
+    "plots": {
+      "median_token_prices": "/Users/kluless/kairos/llm_token_price_index/assets/median_token_prices.png",
+      "token_price_distribution": "/Users/kluless/kairos/llm_token_price_index/assets/token_price_distribution.png",
+      "token_price_index_history": "/Users/kluless/kairos/llm_token_price_index/assets/token_price_index_history.png",
+      "top_model_companies": "/Users/kluless/kairos/llm_token_price_index/assets/top_model_companies.png"
+    },
+    "simon_intervals": "/Users/kluless/kairos/llm_token_price_index/csv/simon_historical_intervals.csv",
+    "simon_backfill": "/Users/kluless/kairos/llm_token_price_index/csv/simon_historical_backfill.csv",
+    "simon_backfill_index": "/Users/kluless/kairos/llm_token_price_index/csv/simon_historical_price_index.csv"
+  },
+  "methodology": {
+    "price_unit": "USD per 1 million tokens",
+    "headline_index": "Geometric mean of cleaned core-universe price ratios vs token-type base date.",
+    "all_index": "Diagnostic geometric index over all source-aware catalog rows.",
+    "zero_prices": "Retained in normalized tables, excluded from index and descriptive stats.",
+    "source_combining": "Core prices are grouped by canonical provider, canonical model id, and token type; median source price is used."
+  }
+}
