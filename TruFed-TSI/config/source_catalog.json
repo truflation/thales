@@ -1,0 +1,46 @@
+{
+  "official_sources": [
+    {
+      "name": "Federal Reserve FOMC calendar",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "use_for": ["fomc_statements", "fomc_minutes", "press_conferences", "projection_materials"],
+      "notes": "Primary source for recent FOMC meeting materials. The page currently includes recent years."
+    },
+    {
+      "name": "Federal Reserve historical FOMC pages",
+      "url_pattern": "https://www.federalreserve.gov/monetarypolicy/fomchistorical{year}.htm",
+      "use_for": ["historical_fomc_statements", "historical_fomc_minutes", "historical_press_conferences"],
+      "notes": "Use year-specific pages for historical FOMC materials through 2020."
+    },
+    {
+      "name": "Federal Reserve speeches and testimony",
+      "url": "https://www.federalreserve.gov/newsevents/speeches-testimony.htm",
+      "use_for": ["board_member_speeches", "board_member_testimony"],
+      "notes": "Primary source for Board member speeches and congressional testimony."
+    },
+    {
+      "name": "Federal Reserve FOMC membership",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomc.htm",
+      "use_for": ["current_fomc_members", "voting_status_rules"],
+      "notes": "Use for current membership and rotation rules. Historical voter mapping should also use voter lists embedded in FOMC statements."
+    },
+    {
+      "name": "New York Fed speeches",
+      "url": "https://www.newyorkfed.org/newsevents/speeches",
+      "use_for": ["new_york_fed_president_speeches"],
+      "notes": "The New York Fed president is a permanent FOMC voter."
+    },
+    {
+      "name": "FRASER FOMC archive",
+      "url": "https://fraser.stlouisfed.org/title/federal-open-market-committee-meeting-minutes-transcripts-documents-677",
+      "use_for": ["archive_fallback"],
+      "notes": "Use as a fallback archive when official Fed page structure changes or older documents are missing."
+    },
+    {
+      "name": "Loughran-McDonald Master Dictionary",
+      "url": "https://sraf.nd.edu/loughranmcdonald-master-dictionary/",
+      "use_for": ["base_financial_sentiment_dictionary"],
+      "notes": "Use as a base financial text dictionary only. Fed-specific hawkish/dovish phrases should be maintained separately."
+    }
+  ]
+}
