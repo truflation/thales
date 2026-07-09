@@ -33,6 +33,7 @@ TruFed-TSI/
 │   ├── METHODOLOGY.md
 │   └── SOURCE_MAP.md
 └── scripts/
+    ├── aggregate_speaker_tsi.py
     ├── aggregate_tsi.py
     ├── collect_fed_links.py
     ├── extract_pdf_text.py
@@ -138,6 +139,40 @@ Recent quarterly TSI values from the validation run:
 This confirms the reference pipeline can collect official FOMC communication,
 extract text, score documents, and produce a quarterly TSI dataset without any
 database or backend integration.
+
+## Speaker-Level TSI
+
+Speaker-level TSI uses the same scored document file, but groups by
+`period_label + speaker` instead of only by quarter.
+
+```bash
+python TruFed-TSI/scripts/aggregate_speaker_tsi.py \
+  --input TruFed-TSI/data/scored_documents.csv \
+  --output TruFed-TSI/data/speaker_tsi.csv
+```
+
+This should be used for speaker-specific documents:
+
+- Chair press conference transcripts.
+- Board speeches.
+- Board testimony.
+- Reserve Bank president speeches once those source collectors are added.
+
+Do not treat FOMC statements or FOMC minutes as individual spokesperson text.
+Those are committee-level documents.
+
+A 2026 sample run using FOMC materials plus Board speeches/testimony produced 17
+speaker-quarter rows. Example output:
+
+```text
+2026Q2 Chair      2 docs  TSI -0.01716738  hawkish
+2026Q2 Cook       3 docs  TSI  0.01960784  dovish
+2026Q2 Jefferson  2 docs  TSI  0.02958580  dovish
+2026Q2 Waller     5 docs  TSI -0.04804805  hawkish
+```
+
+Q3 values in an in-quarter run should be treated as partial until the quarter is
+complete.
 
 ## What This Is
 
